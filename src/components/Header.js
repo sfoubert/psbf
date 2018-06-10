@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import logo from '../assets/images/savate-logo.jpg';
+import logo from '../assets/images/psbf-logo.jpg';
 
 const Header = (props) => (
     <header id="header" className="alt">

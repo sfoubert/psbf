@@ -52,7 +52,7 @@ class Index extends React.Component {
                                     long de la semaine. Chaque adhérent accède à tous les créneaux afin de suivre les
                                     cours des différents moniteurs.</p>
 
-                                <table class="alt">
+                                <table>
                                     <thead>
                                     <tr>
                                         <th>Jour</th>
@@ -104,7 +104,7 @@ class Index extends React.Component {
                                 </table>
 
                                 <ul className="actions">
-                                    <li><Link to="/generic" className="button">Voir plus</Link></li>
+                                    <li><Link to="/place" className="button">Les salles</Link></li>
                                 </ul>
                             </div>
                             <span className="image"><img src={pic01} alt=""/></span>
@@ -115,8 +115,6 @@ class Index extends React.Component {
                         <header className="major">
                             <h2>La Savate</h2>
                         </header>
-
-
 
                         <p>
 
@@ -179,7 +177,7 @@ class Index extends React.Component {
                         <ul className="statistics">
                             <li className="style1">
                                 <span className="icon fa-archive"></span>
-                                <strong>100</strong> adhérents
+                                <strong>120</strong> adhérents
                             </li>
                             <li className="style2">
                                 <span className="icon fa-users"></span>
