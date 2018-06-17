@@ -24,7 +24,7 @@ const Footer = (props) => (
                 <li><a href="https://m.facebook.com/groups/aspttparissavate/" className="icon fa-facebook alt"><span className="label">Facebook</span></a></li>
             </ul>
         </section>
-        <p className="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+        <p className="copyright">&copy; PSBF. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
     </footer>
 )
 
