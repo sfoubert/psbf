@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Waypoint from 'react-waypoint'
+import Helmet from 'react-helmet'
+import get from 'lodash/get'
 
 import Nav from '../components/Nav'
 
@@ -35,6 +37,12 @@ class Planning extends React.Component {
 
         return (
             <div>
+
+                <Helmet title={get(this, 'props.data.site.siteMetadata.title')}>
+                    <meta name="description" content="Club de Savate Boxe Française sur Paris" />
+                    <meta name="robots" content="index,follow" />
+                </Helmet>
+
                 <Waypoint
                     onEnter={this._handleWaypointEnter}
                     onLeave={this._handleWaypointLeave}
@@ -53,8 +61,9 @@ class Planning extends React.Component {
                             </header>
                             <p>Plusieurs horaires et salles sur paris sont proposés pour les entraînements tout au
                                 long de la semaine. Chaque adhérent accède à tous les créneaux afin de suivre les
-                                cours des différents moniteurs.</p>
-
+                                cours des différents moniteurs. Pensez à arriver 15min avant le début de la séance
+                                pour vous changer.
+                            </p>
                             <table>
                                 <thead>
                                 <tr>

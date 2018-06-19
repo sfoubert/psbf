@@ -1,5 +1,7 @@
 import React from 'react'
 import Waypoint from 'react-waypoint'
+import Helmet from 'react-helmet'
+import get from 'lodash/get'
 
 import Nav from '../components/Nav'
 
@@ -25,6 +27,11 @@ class Inscription extends React.Component {
 
         return (
             <div>
+                <Helmet title={get(this, 'props.data.site.siteMetadata.title')}>
+                    <meta name="description" content="Club de Savate Boxe Française sur Paris" />
+                    <meta name="robots" content="index,follow" />
+                </Helmet>
+
                 <Waypoint
                     onEnter={this._handleWaypointEnter}
                     onLeave={this._handleWaypointLeave}
