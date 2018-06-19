@@ -1,8 +1,8 @@
 import React from 'react'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
 import Waypoint from 'react-waypoint'
 import Link from 'gatsby-link'
+import Helmet from 'react-helmet'
+import get from 'lodash/get'
 
 import Nav from '../components/Nav'
 
@@ -42,7 +42,11 @@ class Salles extends React.Component {
 
         return (
             <div>
-                <Helmet title={get(this, 'props.data.site.siteMetadata.title')}/>
+
+                <Helmet title={get(this, 'props.data.site.siteMetadata.title')}>
+                    <meta name="description" content="Club de Savate Boxe Française sur Paris" />
+                    <meta name="robots" content="index,follow" />
+                </Helmet>
 
                 <Waypoint
                     onEnter={this._handleWaypointEnter}

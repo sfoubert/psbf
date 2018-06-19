@@ -6,13 +6,6 @@ import logo from '../assets/images/logo.svg';
 const Footer = (props) => (
     <footer id="footer">
         <section>
-            <h2>Aliquam sed mauris</h2>
-            <p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-            <ul className="actions">
-                <li><Link to="/generic" className="button">Learn More</Link></li>
-            </ul>
-        </section>
-        <section>
             <h2>Contact</h2>
             <dl className="alt">
                 <dt>Phone</dt>
@@ -21,10 +14,10 @@ const Footer = (props) => (
                 <dd><a href="#">aspttparissavate@gmail.com</a></dd>
             </dl>
             <ul className="icons">
-                <li><a href="https://m.facebook.com/groups/aspttparissavate/" className="icon fa-facebook alt"><span className="label">Facebook</span></a></li>
+                <li><a href="https://www.facebook.com/groups/1028797570612471/" className="icon fa-facebook alt"><span className="label">Facebook</span></a></li>
             </ul>
         </section>
-        <p className="copyright">&copy; PSBF. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+        <p className="copyright">&copy; PSBF</p>
     </footer>
 )
 

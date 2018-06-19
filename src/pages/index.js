@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
 import Waypoint from 'react-waypoint'
+import Helmet from 'react-helmet'
+import get from 'lodash/get'
 
 import Header from '../components/Header'
 import Nav from '../components/Nav'
@@ -29,9 +29,12 @@ class Index extends React.Component {
 
         return (
             <div>
-                <Helmet title={get(this, 'props.data.site.siteMetadata.title')}/>
-
                 <Header />
+
+                <Helmet title={get(this, 'props.data.site.siteMetadata.title')}>
+                    <meta name="description" content="Club de Savate Boxe Française sur Paris" />
+                    <meta name="robots" content="index,follow" />
+                </Helmet>
 
                 <Waypoint
                     onEnter={this._handleWaypointEnter}
