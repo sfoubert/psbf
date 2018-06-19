@@ -1,6 +1,4 @@
 import React from 'react'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
 import Waypoint from 'react-waypoint'
 import Link from 'gatsby-link'
 
@@ -42,8 +40,6 @@ class Salles extends React.Component {
 
         return (
             <div>
-                <Helmet title={get(this, 'props.data.site.siteMetadata.title')}/>
-
                 <Waypoint
                     onEnter={this._handleWaypointEnter}
                     onLeave={this._handleWaypointLeave}

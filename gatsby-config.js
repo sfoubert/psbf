@@ -1,42 +1,52 @@
 module.exports = {
-  siteMetadata: {
-    title: "PSBF - Paris Savate Boxe Française",
-    author: "Sébastien Foubert",
-    description: "Club de Savate Boxe Française sur Paris"
-  },
-  pathPrefix: '/',
-  plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/posts`,
-        name: "posts",
-      },
+    siteMetadata: {
+        title: "PSBF - Paris Savate Boxe Française",
+        author: "Sébastien Foubert",
+        description: "Club de Savate Boxe Française sur Paris"
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/assets/images`,
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
+    pathPrefix: '/',
+    plugins: [
+        {
+            resolve: `gatsby-source-filesystem`,
             options: {
-              maxWidth: 630,
+                path: `${__dirname}/src/posts`,
+                name: "posts",
             },
-          },
-          "gatsby-remark-copy-linked-files",
-        ],
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`
-  ],
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `images`,
+                path: `${__dirname}/src/assets/images`,
+            },
+        },
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 630,
+                        },
+                    },
+                    "gatsby-remark-copy-linked-files",
+                ],
+            },
+        },
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+                trackingId: "UA-2767287-19",
+                head: true,
+                anonymize: true,
+                respectDNT: true,
+                exclude: [],
+            },
+        },
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
+        `gatsby-plugin-react-helmet`,
+        `gatsby-plugin-sass`
+    ],
 }

@@ -1,7 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
 import Waypoint from 'react-waypoint'
 
 import Header from '../components/Header'
@@ -29,8 +27,6 @@ class Index extends React.Component {
 
         return (
             <div>
-                <Helmet title={get(this, 'props.data.site.siteMetadata.title')}/>
-
                 <Header />
 
                 <Waypoint
