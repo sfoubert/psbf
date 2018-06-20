@@ -6,8 +6,18 @@ import get from 'lodash/get'
 
 import Header from '../components/Header'
 import Nav from '../components/Nav'
+import Gallery from "../components/Gallery";
 
 import picBandeau from '../assets/images/bercy-01.jpg'
+
+const DEFAULT_IMAGES = [
+    { id: '1', src: picBandeau, thumbnail: picBandeau, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
+    { id: '2', src: picBandeau, thumbnail: picBandeau, caption: 'Photo 2', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
+    { id: '3', src: picBandeau, thumbnail: picBandeau, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
+    { id: '3', src: picBandeau, thumbnail: picBandeau, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
+    { id: '3', src: picBandeau, thumbnail: picBandeau, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
+    { id: '3', src: picBandeau, thumbnail: picBandeau, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
+];
 
 class Index extends React.Component {
     constructor(props) {
@@ -96,6 +106,13 @@ class Index extends React.Component {
                             </ul>
                         </footer>
                     </section>
+
+                    <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description }) => ({
+                        src,
+                        thumbnail,
+                        caption,
+                        description
+                    }))} />
 
                 </div>
 
