@@ -5,8 +5,10 @@ import Helmet from 'react-helmet'
 import get from 'lodash/get'
 
 import Nav from '../components/Nav'
+import Gallery from "../components/Gallery";
 
 import picBandeau from '../assets/images/salles/ripoche-01.jpg'
+
 import picBercy01 from '../assets/images/salles/bercy-01.jpg'
 import picBercy02 from '../assets/images/salles/bercy-02.jpg'
 import picBercy03 from '../assets/images/salles/bercy-03.jpg'
@@ -21,6 +23,47 @@ import picFlorimont02 from '../assets/images/salles/florimont-02.jpg'
 import picRipoche01 from '../assets/images/salles/ripoche-01.jpg'
 import picRipoche02 from '../assets/images/salles/ripoche-02.jpg'
 import picRipoche03 from '../assets/images/salles/ripoche-03.jpg'
+
+import thumbBercy01 from '../assets/images/salles/thumb/bercy-01.jpg'
+import thumbBercy02 from '../assets/images/salles/thumb/bercy-02.jpg'
+import thumbBercy03 from '../assets/images/salles/thumb/bercy-03.jpg'
+import thumbBercy04 from '../assets/images/salles/thumb/bercy-04.jpg'
+import thumbDumas01 from '../assets/images/salles/thumb/dumas-01.jpg'
+import thumbDumas02 from '../assets/images/salles/thumb/dumas-02.jpg'
+import thumbDumas03 from '../assets/images/salles/thumb/dumas-03.jpg'
+import thumbDumas04 from '../assets/images/salles/thumb/dumas-04.jpg'
+import thumbDumas05 from '../assets/images/salles/thumb/dumas-05.jpg'
+import thumbFlorimont01 from '../assets/images/salles/thumb/florimont-01.jpg'
+import thumbFlorimont02 from '../assets/images/salles/thumb/florimont-02.jpg'
+import thumbRipoche01 from '../assets/images/salles/thumb/ripoche-01.jpg'
+import thumbRipoche02 from '../assets/images/salles/thumb/ripoche-02.jpg'
+import thumbRipoche03 from '../assets/images/salles/thumb/ripoche-03.jpg'
+
+const DUMAS_IMAGES = [
+    { id: 'dumas01', src: picDumas01, thumbnail: thumbDumas01},
+    { id: 'dumas02', src: picDumas02, thumbnail: thumbDumas02},
+    { id: 'dumas03', src: picDumas03, thumbnail: thumbDumas03},
+    { id: 'dumas04', src: picDumas04, thumbnail: thumbDumas04},
+    { id: 'dumas05', src: picDumas05, thumbnail: thumbDumas05},
+];
+
+const BERCY_IMAGES = [
+    { id: 'bercy01', src: picBercy01, thumbnail: thumbBercy01},
+    { id: 'bercy02', src: picBercy02, thumbnail: thumbBercy02},
+    { id: 'bercy03', src: picBercy03, thumbnail: thumbBercy03},
+    { id: 'bercy04', src: picBercy04, thumbnail: thumbBercy04},
+];
+
+const FLORIMONT_IMAGES = [
+    { id: 'florimont01', src: picFlorimont01, thumbnail: thumbFlorimont01},
+    { id: 'florimont02', src: picFlorimont02, thumbnail: thumbFlorimont02},
+];
+
+const RIPOCHE_IMAGES = [
+    { id: 'ripoche01', src: picRipoche01, thumbnail: thumbRipoche01},
+    { id: 'ripoche02', src: picRipoche02, thumbnail: thumbRipoche02},
+    { id: 'ripoche03', src: picRipoche03, thumbnail: thumbRipoche03},
+];
 
 class Salles extends React.Component {
     constructor(props) {
@@ -43,7 +86,7 @@ class Salles extends React.Component {
         return (
             <div>
 
-                <Helmet title={get(this, 'props.data.site.siteMetadata.title')}>
+                <Helmet title={'Salles | ' + get(this, 'props.data.site.siteMetadata.title')}>
                     <meta name="description" content="Club de Savate Boxe Française sur Paris" />
                     <meta name="robots" content="index,follow" />
                 </Helmet>
@@ -74,13 +117,11 @@ class Salles extends React.Component {
                                     width="600" height="450" frameBorder="0" allowFullScreen="allowFullScreen"></iframe>
                             </header>
 
-                            <ul className="features">
-                                <li><span className="image main"><img src={picDumas01} alt=""/></span></li>
-                                <li><span className="image main"><img src={picDumas02} alt=""/></span></li>
-                                <li><span className="image main"><img src={picDumas03} alt=""/></span></li>
-                                <li><span className="image main"><img src={picDumas04} alt=""/></span></li>
-                                <li><span className="image main"><img src={picDumas05} alt=""/></span></li>
-                            </ul>
+                            <Gallery images={DUMAS_IMAGES.map(({ id, src, thumbnail}) => ({
+                                src,
+                                thumbnail,
+                            }))} />
+
                         </section>
                         <section id="florimont" className="main special">
                             <header className="major">
@@ -96,10 +137,10 @@ class Salles extends React.Component {
                                     width="600" height="450" frameBorder="0" allowFullScreen="allowFullScreen"></iframe>
                             </header>
 
-                            <ul className="features">
-                                <li><span className="image main"><img src={picFlorimont01} alt=""/></span></li>
-                                <li><span className="image main"><img src={picFlorimont02} alt=""/></span></li>
-                            </ul>
+                            <Gallery images={FLORIMONT_IMAGES.map(({ id, src, thumbnail}) => ({
+                                src,
+                                thumbnail,
+                            }))} />
                         </section>
 
                         <section id="julesnoel" className="main special">
@@ -130,11 +171,10 @@ class Salles extends React.Component {
                                     width="600" height="450" frameBorder="0" allowFullScreen="allowFullScreen"></iframe>
                             </header>
 
-                            <ul className="features">
-                                <li><span className="image main"><img src={picRipoche01} alt=""/></span></li>
-                                <li><span className="image main"><img src={picRipoche02} alt=""/></span></li>
-                                <li><span className="image main"><img src={picRipoche03} alt=""/></span></li>
-                            </ul>
+                            <Gallery images={RIPOCHE_IMAGES.map(({ id, src, thumbnail}) => ({
+                                src,
+                                thumbnail,
+                            }))} />
                         </section>
 
                         <section id="bercy" className="main special">
@@ -153,12 +193,10 @@ class Salles extends React.Component {
                                     width="600" height="450" frameBorder="0" allowFullScreen="allowFullScreen"></iframe>
                             </header>
 
-                            <ul className="features">
-                                <li><span className="image main"><img src={picBercy01} alt=""/></span></li>
-                                <li><span className="image main"><img src={picBercy02} alt=""/></span></li>
-                                <li><span className="image main"><img src={picBercy03} alt=""/></span></li>
-                                <li><span className="image main"><img src={picBercy04} alt=""/></span></li>
-                            </ul>
+                            <Gallery images={BERCY_IMAGES.map(({ id, src, thumbnail}) => ({
+                                src,
+                                thumbnail,
+                            }))} />
 
                         </section>
 

@@ -5,18 +5,30 @@ import Helmet from 'react-helmet'
 import get from 'lodash/get'
 
 import Nav from '../components/Nav'
+import Gallery from "../components/Gallery";
 
 import picBandeau from '../assets/images/salles/ripoche-01.jpg'
+
 import picSavate01 from '../assets/images/savate/assaut-01.jpg'
 import picSavate02 from '../assets/images/savate/assaut-02.jpg'
 import picSavate03 from '../assets/images/savate/assaut-03.jpg'
 import picSavate04 from '../assets/images/savate/assaut-04.jpg'
+import picSavate05 from '../assets/images/savate/assaut-05.jpg'
+
 import picGantBleu from '../assets/images/grades/gant_bleu.jpg'
 import picGantVert from '../assets/images/grades/gant_vert.jpg'
 import picGantRouge from '../assets/images/grades/gant_rouge.jpg'
 import picGantBlanc from '../assets/images/grades/gant_blanc.jpg'
 import picGantJaune from '../assets/images/grades/gant_jaune.jpg'
 import picGantArgent from '../assets/images/grades/gant_argent.jpg'
+
+const DEFAULT_IMAGES = [
+    { id: '1', src: picSavate01, thumbnail: picSavate01},
+    { id: '2', src: picSavate02, thumbnail: picSavate02},
+    { id: '3', src: picSavate03, thumbnail: picSavate03},
+    { id: '4', src: picSavate04, thumbnail: picSavate04},
+    { id: '5', src: picSavate05, thumbnail: picSavate05},
+];
 
 class Savate extends React.Component {
     constructor(props) {
@@ -39,7 +51,7 @@ class Savate extends React.Component {
         return (
             <div>
 
-                <Helmet title={get(this, 'props.data.site.siteMetadata.title')}>
+                <Helmet title={'Savate | ' + get(this, 'props.data.site.siteMetadata.title')}>
                     <meta name="description" content="Club de Savate Boxe Française sur Paris" />
                     <meta name="robots" content="index,follow" />
                 </Helmet>
@@ -77,11 +89,11 @@ class Savate extends React.Component {
                             La Savate Boxe Française est partie intégrante du patrimoine culturel immatériel français.
                             Elle trouve ses origines au XIXe siècle.
                         </p>
-                        <ul className="features">
-                            <li><span className="image main"><img src={picSavate01} alt=""/></span></li>
-                            <li><span className="image main"><img src={picSavate02} alt=""/></span></li>
-                            <li><span className="image main"><img src={picSavate03} alt=""/></span></li>
-                        </ul>
+
+                        <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail}) => ({
+                            src,
+                            thumbnail,
+                        }))} />
 
                         <section id="grades" className="main special">
                             <header className="major">
