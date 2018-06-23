@@ -93,7 +93,7 @@
 		}
 
 		@include breakpoint(small) {
-			display: none;
+			display: inline-block;
 
 			& + #main {
 				padding-top: 0;

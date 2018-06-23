@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-stellar",
-  "description": "Gatsby Starter - Stellar by HTML5 UP",
+  "name": "gatsby-starter-psbf",
+  "description": "Gatsby Starter - PSBF",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Sebastien Foubert",
   "dependencies": {
     "gatsby": "^1.9.235",
     "gatsby-image": "^1.0.42",
@@ -12,16 +12,17 @@
     "gatsby-plugin-sass": "^1.0.23",
     "gatsby-plugin-sharp": "^1.6.41",
     "gatsby-remark-copy-linked-files": "^1.5.30",
-    "gatsby-remark-images": "^1.5.56",
+    "gatsby-remark-images": "^1.5.67",
     "gatsby-source-filesystem": "^1.5.27",
     "gatsby-transformer-remark": "^1.7.37",
     "gatsby-transformer-sharp": "^1.6.22",
     "lodash": "^4.17.5",
+    "react-images": "^0.5.17",
     "react-scroll-to-element": "^0.2.0",
     "react-scrollspy": "^3.3.5",
     "react-waypoint": "^8.0.1"
   },
-  "homepage": "https://github.com/ChangoMan/gatsby-starter-stellar",
+  "homepage": "https://github.com/sfoubert/psbf",
   "keywords": [
     "gatsby"
   ],
@@ -29,7 +30,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ChangoMan/gatsby-starter-stellar.git"
+    "url": "https://github.com/sfoubert/psbf.git"
   },
   "scripts": {
     "dev": "gatsby develop",

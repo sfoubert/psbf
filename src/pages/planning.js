@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import get from 'lodash/get'
 
 import Nav from '../components/Nav'
+import Gallery from "../components/Gallery";
 
 import picHoraires from '../assets/images/horaires.png'
 import picBandeau from '../assets/images/bercy-01.jpg'
@@ -16,6 +17,25 @@ import picProf05 from '../assets/images/profs/malika-dom-seb-jerome-01.jpg'
 import picProf06 from '../assets/images/profs/maria-01.jpg'
 import picProf07 from '../assets/images/profs/seb-01.jpg'
 import picProf08 from '../assets/images/profs/seb-dom-jerome-01.jpg'
+
+import thumbProf01 from '../assets/images/profs/thumb/dom-01.jpg'
+import thumbProf02 from '../assets/images/profs/thumb/dom-02.jpg'
+import thumbProf03 from '../assets/images/profs/thumb/jeremie-01.jpg'
+import thumbProf04 from '../assets/images/profs/thumb/malika-brahim-01.jpg'
+import thumbProf05 from '../assets/images/profs/thumb/malika-dom-seb-jerome-01.jpg'
+import thumbProf06 from '../assets/images/profs/thumb/maria-01.jpg'
+import thumbProf07 from '../assets/images/profs/thumb/seb-01.jpg'
+import thumbProf08 from '../assets/images/profs/thumb/seb-dom-jerome-01.jpg'
+
+const DEFAULT_IMAGES = [
+    { id: '1', src: picProf01, thumbnail: thumbProf01},
+    { id: '2', src: picProf02, thumbnail: thumbProf02},
+    { id: '3', src: picProf03, thumbnail: thumbProf03},
+    { id: '4', src: picProf04, thumbnail: thumbProf04},
+    { id: '6', src: picProf06, thumbnail: thumbProf06},
+    { id: '7', src: picProf07, thumbnail: thumbProf07},
+    { id: '8', src: picProf08, thumbnail: thumbProf08},
+];
 
 class Planning extends React.Component {
     constructor(props) {
@@ -38,7 +58,7 @@ class Planning extends React.Component {
         return (
             <div>
 
-                <Helmet title={get(this, 'props.data.site.siteMetadata.title')}>
+                <Helmet title={'Planning | ' + get(this, 'props.data.site.siteMetadata.title')}>
                     <meta name="description" content="Club de Savate Boxe Française sur Paris" />
                     <meta name="robots" content="index,follow" />
                 </Helmet>
@@ -134,16 +154,10 @@ class Planning extends React.Component {
                                 <h2>Les moniteurs</h2>
                             </header>
 
-                            <ul className="features">
-                                <li><span className="image main"><img src={picProf01} alt=""/></span></li>
-                                <li><span className="image main"><img src={picProf02} alt=""/></span></li>
-                                <li><span className="image main"><img src={picProf03} alt=""/></span></li>
-                                <li><span className="image main"><img src={picProf04} alt=""/></span></li>
-                                <li><span className="image main"><img src={picProf05} alt=""/></span></li>
-                                <li><span className="image main"><img src={picProf06} alt=""/></span></li>
-                                <li><span className="image main"><img src={picProf07} alt=""/></span></li>
-                                <li><span className="image main"><img src={picProf08} alt=""/></span></li>
-                            </ul>
+                            <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail}) => ({
+                                src,
+                                thumbnail,
+                            }))} />
 
                         </div>
                         <footer className="major">

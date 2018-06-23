@@ -6,8 +6,18 @@ import get from 'lodash/get'
 
 import Header from '../components/Header'
 import Nav from '../components/Nav'
+import Gallery from "../components/Gallery";
 
 import picBandeau from '../assets/images/bercy-01.jpg'
+
+const DEFAULT_IMAGES = [
+    { id: '1', src: picBandeau, thumbnail: picBandeau, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
+    { id: '2', src: picBandeau, thumbnail: picBandeau, caption: 'Photo 2', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
+    { id: '3', src: picBandeau, thumbnail: picBandeau, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
+    { id: '3', src: picBandeau, thumbnail: picBandeau, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
+    { id: '3', src: picBandeau, thumbnail: picBandeau, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
+    { id: '3', src: picBandeau, thumbnail: picBandeau, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
+];
 
 class Index extends React.Component {
     constructor(props) {
@@ -31,7 +41,7 @@ class Index extends React.Component {
             <div>
                 <Header />
 
-                <Helmet title={get(this, 'props.data.site.siteMetadata.title')}>
+                <Helmet title={'Le club | ' + get(this, 'props.data.site.siteMetadata.title')}>
                     <meta name="description" content="Club de Savate Boxe Française sur Paris" />
                     <meta name="robots" content="index,follow" />
                 </Helmet>
@@ -62,33 +72,17 @@ class Index extends React.Component {
                             <p>
                                 L'inscription permet d'accèder à l'ensemble des créneaux et salles proposées.
                             </p>
+                            <p>
+                                Les couleurs du club sont le Bleu et Rouge.
+                            </p>
                         </header>
-                        <ul className="statistics">
-                            <li className="style1">
-                                <span className="icon fa-archive"></span>
-                                <strong>120</strong> adhérents
-                            </li>
-                            <li className="style2">
-                                <span className="icon fa-users"></span>
-                                <strong>40%</strong> féminines
-                            </li>
-                            <li className="style3">
-                                <span className="icon fa-copy"></span>
-                                <strong>9</strong> moniteurs fédéraux
-                            </li>
-                            <li className="style4">
-                                <span className="icon fa-diamond"></span>
-                                <strong>Label OR</strong> Savate pour tous
-                            </li>
-                            <li className="style5">
-                                <span className="icon fa-diamond"></span>
-                                <strong>Label OR</strong> Performance
-                            </li>
-                        </ul>
 
-                        <p>
-                            Les couleurs du club sont le Bleu et Rouge.
-                        </p>
+                        <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description }) => ({
+                            src,
+                            thumbnail,
+                            caption,
+                            description
+                        }))} />
 
                         <footer className="major">
                             <ul className="actions">
