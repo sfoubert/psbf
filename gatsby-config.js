@@ -1,8 +1,9 @@
 module.exports = {
     siteMetadata: {
-        title: "PSBF - Paris Savate Boxe Française",
-        author: "Sébastien Foubert",
-        description: "Club de Savate Boxe Française sur Paris"
+        title: 'PSBF - Paris Savate Boxe Française',
+        author: 'Sébastien Foubert',
+        description: 'Club de Savate Boxe Française sur Paris',
+        siteUrl: 'https://psbf.netlify.com',
     },
     pathPrefix: '/',
     plugins: [
@@ -10,7 +11,7 @@ module.exports = {
             resolve: `gatsby-source-filesystem`,
             options: {
                 path: `${__dirname}/src/posts`,
-                name: "posts",
+                name: 'posts',
             },
         },
         {
@@ -30,19 +31,40 @@ module.exports = {
                             maxWidth: 630,
                         },
                     },
-                    "gatsby-remark-copy-linked-files",
+                    'gatsby-remark-copy-linked-files',
                 ],
             },
         },
         {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
-                trackingId: "UA-2767287-19",
+                trackingId: 'UA-2767287-19',
                 head: true,
                 anonymize: true,
                 respectDNT: true,
                 exclude: [],
             },
+        },
+        {
+            resolve: `gatsby-plugin-sitemap`,
+            options: {
+                output: '/sitemap.xml',
+                query: `
+                    {
+                      site {
+                        siteMetadata {
+                          siteUrl
+                        }
+                      }
+                      allSitePage {
+                        edges {
+                          node {
+                            path
+                          }
+                        }
+                      }
+                  }`
+            }
         },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
