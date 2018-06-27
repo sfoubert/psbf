@@ -71,7 +71,7 @@ module.exports = {
             options: {
                 policy: [{ userAgent: '*', allow: '/' }]
             }
-        }
+        },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         `gatsby-plugin-react-helmet`,
