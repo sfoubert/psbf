@@ -66,6 +66,12 @@ module.exports = {
                   }`
             }
         },
+        {
+            resolve: 'gatsby-plugin-robots-txt',
+            options: {
+                policy: [{ userAgent: '*', allow: '/' }]
+            }
+        }
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         `gatsby-plugin-react-helmet`,
