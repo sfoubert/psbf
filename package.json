@@ -2,7 +2,7 @@
   "name": "gatsby-starter-psbf",
   "description": "Gatsby Starter - PSBF",
   "version": "1.0.0",
-  "author": "Sebastien Foubert",
+  "author": "Sébastien Foubert",
   "dependencies": {
     "gatsby": "^1.9.235",
     "gatsby-image": "^1.0.42",
@@ -11,6 +11,7 @@
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sass": "^1.0.23",
     "gatsby-plugin-sharp": "^1.6.41",
+    "gatsby-plugin-sitemap": "^1.2.25",
     "gatsby-remark-copy-linked-files": "^1.5.30",
     "gatsby-remark-images": "^1.5.67",
     "gatsby-source-filesystem": "^1.5.27",
