@@ -136,7 +136,7 @@ class Planning extends React.Component {
                             </table>
 
                             <p>
-                                <span><img src={picHoraires} alt=""/></span>
+                                <span><img className="image main" src={picHoraires} alt=""/></span>
                             </p>
 
                             <ul className="actions">
