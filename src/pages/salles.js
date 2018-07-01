@@ -87,8 +87,9 @@ class Salles extends React.Component {
             <div>
 
                 <Helmet title={'Salles | ' + get(this, 'props.data.site.siteMetadata.title')}>
-                    <meta name="description" content="Club de Savate Boxe Française sur Paris" />
+                    <meta name="description" content={ get(this, 'props.data.site.siteMetadata.description') } />
                     <meta name="robots" content="index,follow" />
+                    <link rel="canonical" href={ get(this, 'props.data.site.siteMetadata.siteUrl') } />
                 </Helmet>
 
                 <Waypoint
