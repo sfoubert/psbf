@@ -6,7 +6,7 @@ import picLogo from '../assets/images/logo.png'
 const Header = (props) => (
     <div>
         <Helmet>
-            <meta name="description" content="Club de Savate Boxe Française sur Paris"/>
+            <meta name="description" content="PSBF - Paris Savate Boxe Française est un club de Savate Boxe Française sur Paris"/>
 
             <meta itemProp="name" content="Le club | PSBF - Paris Savate Boxe Française"/>
             <meta itemProp="description" content="Club de Savate Boxe Française sur Paris"/>
