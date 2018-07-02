@@ -10,18 +10,18 @@ const Header = (props) => (
 
             <meta itemProp="name" content="Le club | PSBF - Paris Savate Boxe Française"/>
             <meta itemProp="description" content="Club de Savate Boxe Française sur Paris"/>
-            <meta itemProp="image" content=""/>
+            <meta itemProp="image" content={picLogo}/>
 
             <meta property="og:url" content="http://www.parissavate.fr"/>
             <meta property="og:type" content="website"/>
             <meta property="og:title" content="Le club | PSBF - Paris Savate Boxe Française"/>
             <meta property="og:description" content="Club de Savate Boxe Française sur Paris"/>
-            <meta property="og:image" content=""/>
+            <meta property="og:image" content={picLogo}/>
 
             <meta name="twitter:card" content="summary_large_image"/>
             <meta name="twitter:title" content="Le club | PSBF - Paris Savate Boxe Française"/>
             <meta name="twitter:description" content="Club de Savate Boxe Française sur Paris"/>
-            <meta name="twitter:image" content=""/>
+            <meta name="twitter:image" content={picLogo}/>
 
             <meta name="robots" content="index,follow"/>
             <link rel="canonical" href="http://www.parissavate.fr"/>

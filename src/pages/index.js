@@ -24,7 +24,7 @@ import thumbClub04 from '../assets/images/club/thumb/assaut-04.jpg'
 import thumbClub05 from '../assets/images/club/thumb/assaut-05.jpg'
 import thumbClub06 from '../assets/images/club/thumb/assaut-06.jpg'
 
-const DEFAULT_IMAGES = [stre
+const DEFAULT_IMAGES = [
     { id: '1', src: picClub01, thumbnail: thumbClub01, caption: 'Challenge IDF', description: 'Compétition régionale à partir de gant rouge'},
     { id: '2', src: picClub02, thumbnail: thumbClub02, caption: 'Elite A', description: 'Championnat combat avec l\'elite de la boxe française'},
     { id: '6', src: picClub06, thumbnail: thumbClub06, caption: 'Photo de cours', description: 'Des cours durant les vacances scolaires et l\'été'},
