@@ -2,7 +2,7 @@ module.exports = {
     siteMetadata: {
         title: 'PSBF - Paris Savate Boxe Française',
         author: 'Sébastien Foubert',
-        description: 'Club de Savate Boxe Française sur Paris',
+        description: ' PSBF - Paris Savate Boxe Française - Club de Savate Boxe Française sur Paris',
         siteUrl: 'http://www.parissavate.fr',
     },
     pathPrefix: '/',
