@@ -83,7 +83,8 @@ class Index extends React.Component {
                                 Les cours sont tous niveaux, et ouverts aussi bien aux loisirs et aux compétiteurs.
                             </p>
                             <p>
-                                L'inscription permet d'accèder à l'ensemble des créneaux et salles proposées.
+                                Retrouvez la présentation du club, les horaires et lieux sur ce site.
+                                L'inscription annuelle, permet d'accèder à l'ensemble des créneaux et salles proposées sur Paris.
                             </p>
                             <p>
                                 Les couleurs du club sont le Bleu et Rouge.
