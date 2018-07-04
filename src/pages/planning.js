@@ -73,70 +73,18 @@ class Planning extends React.Component {
                     <section id="planning" className="main">
                         <span className="image main"><img src={picBandeau} alt=""/></span>
 
-                        <div className="content">
+                        <div className="main special">
                             <header className="major">
-                                <h2>Planning</h2>
+                                <h1>Planning</h1>
                             </header>
                             <p>Plusieurs horaires et salles sur paris sont proposés pour les entraînements tout au
                                 long de la semaine. Chaque adhérent accède à tous les créneaux afin de suivre les
-                                cours des différents moniteurs. Pensez à arriver 15min avant le début de la séance
-                                pour vous changer.
+                                cours des différents moniteurs et monitrices. Pensez à arriver 15min avant le début
+                                de la séance pour vous changer.
                             </p>
-                            <table>
-                                <thead>
-                                <tr>
-                                    <th>Jour</th>
-                                    <th>Horaire</th>
-                                    <th>Entraîneurs</th>
-                                    <th>Salle</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>Lundi</td>
-                                    <td>18:30 - 19:30</td>
-                                    <td>Malika, Dominique</td>
-                                    <td>Florimont</td>
-                                </tr>
-                                <tr>
-                                    <td>Lundi</td>
-                                    <td>20:30 - 22:00</td>
-                                    <td>Sébastien, Jérémie, Maria</td>
-                                    <td>Alexandre Dumas</td>
-                                </tr>
-                                <tr>
-                                    <td>Mardi</td>
-                                    <td>20:30 - 22:00</td>
-                                    <td>Miodrag</td>
-                                    <td>Jules Noël</td>
-                                </tr>
-                                <tr>
-                                    <td>Jeudi</td>
-                                    <td>19:00 - 20:30</td>
-                                    <td>Dominique</td>
-                                    <td>Ripoche</td>
-                                </tr>
-                                <tr>
-                                    <td>Vendredi</td>
-                                    <td>19:00 - 20:30</td>
-                                    <td>Jérôme</td>
-                                    <td>Ripoche</td>
-                                </tr>
-                                <tr>
-                                    <td>Samedi</td>
-                                    <td>10:00 - 12:00</td>
-                                    <td>Jérôme</td>
-                                    <td>Bercy</td>
-                                </tr>
-                                </tbody>
-                                <tfoot>
-                                </tfoot>
-                            </table>
-
                             <p>
                                 <span><img className="image main" src={picHoraires} alt=""/></span>
                             </p>
-
                             <ul className="actions">
                                 <li><Link to="/salles" className="button">Les salles</Link></li>
                             </ul>
@@ -149,7 +97,7 @@ class Planning extends React.Component {
 
                         <div className="content">
                             <header className="major">
-                                <h2>Les moniteurs</h2>
+                                <h1>Les monitrices et moniteurs</h1>
                             </header>
 
                             <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail}) => ({

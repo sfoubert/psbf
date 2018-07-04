@@ -2,9 +2,19 @@ import React from 'react'
 import Scrollspy from 'react-scrollspy'
 import Scroll from './Scroll'
 
+import picLogoGrey from '../assets/images/logo-grey.png'
+
 const Nav = (props) => (
     <nav id="nav" className={props.sticky ? 'alt' : ''}>
-        <Scrollspy items={ ['club', 'savate', 'planning', 'salles', 'inscription'] } currentClassName="is-active" offset={-300}>
+
+        <Scrollspy items={ ['', 'club', 'savate', 'planning', 'salles', 'inscription'] } currentClassName="is-active" offset={-300}>
+
+            <li>
+                <span className="logo">
+                    <img src={picLogoGrey} alt="PSBF" />
+                </span>
+            </li>
+
             <li>
                 <a href="/">Le club</a>
             </li>

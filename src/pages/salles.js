@@ -20,6 +20,8 @@ import picDumas04 from '../assets/images/salles/dumas-04.jpg'
 import picDumas05 from '../assets/images/salles/dumas-05.jpg'
 import picFlorimont01 from '../assets/images/salles/florimont-01.jpg'
 import picFlorimont02 from '../assets/images/salles/florimont-02.jpg'
+import picJulesnoel01 from '../assets/images/salles/julesnoel-01.jpg'
+import picJulesnoel02 from '../assets/images/salles/julesnoel-02.jpg'
 import picRipoche01 from '../assets/images/salles/ripoche-01.jpg'
 import picRipoche02 from '../assets/images/salles/ripoche-02.jpg'
 import picRipoche03 from '../assets/images/salles/ripoche-03.jpg'
@@ -35,6 +37,8 @@ import thumbDumas04 from '../assets/images/salles/thumb/dumas-04.jpg'
 import thumbDumas05 from '../assets/images/salles/thumb/dumas-05.jpg'
 import thumbFlorimont01 from '../assets/images/salles/thumb/florimont-01.jpg'
 import thumbFlorimont02 from '../assets/images/salles/thumb/florimont-02.jpg'
+import thumbJulesnoel01 from '../assets/images/salles/thumb/julesnoel-01.jpg'
+import thumbJulesnoel02 from '../assets/images/salles/thumb/julesnoel-02.jpg'
 import thumbRipoche01 from '../assets/images/salles/thumb/ripoche-01.jpg'
 import thumbRipoche02 from '../assets/images/salles/thumb/ripoche-02.jpg'
 import thumbRipoche03 from '../assets/images/salles/thumb/ripoche-03.jpg'
@@ -57,6 +61,12 @@ const BERCY_IMAGES = [
 const FLORIMONT_IMAGES = [
     { id: 'florimont01', src: picFlorimont01, thumbnail: thumbFlorimont01},
     { id: 'florimont02', src: picFlorimont02, thumbnail: thumbFlorimont02},
+];
+
+
+const JULESNOEL_IMAGES = [
+    { id: 'julesnoel01', src: picJulesnoel01, thumbnail: thumbJulesnoel01},
+    { id: 'julesnoel02', src: picJulesnoel02, thumbnail: thumbJulesnoel02},
 ];
 
 const RIPOCHE_IMAGES = [
@@ -104,7 +114,7 @@ class Salles extends React.Component {
 
                         <section id="dumas" className="main special">
                             <header className="major">
-                                <h2>SALLE MY FITNESS STUDIO</h2>
+                                <h1>SALLE MY FITNESS STUDIO</h1>
                                 <p>
                                     91 Rue Alexandre Dumas<br/>
                                     75020 PARIS<br/>
@@ -123,7 +133,7 @@ class Salles extends React.Component {
                         </section>
                         <section id="florimont" className="main special">
                             <header className="major">
-                                <h2>SALLE FLORIMONT</h2>
+                                <h1>SALLE FLORIMONT</h1>
                                 <p>
                                     Espace Maindron<br/>
                                     6 Rue Hippolyte Maindron<br/>
@@ -143,7 +153,7 @@ class Salles extends React.Component {
 
                         <section id="julesnoel" className="main special">
                             <header className="major">
-                                <h2>STADE JULES NOEL</h2>
+                                <h1>STADE JULES NOEL</h1>
                                 <p>
                                     3 Avenue Maurice d'Ocagne<br/>
                                     75014 PARIS<br/>
@@ -154,11 +164,16 @@ class Salles extends React.Component {
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21014.190064212304!2d2.314917!3d48.824378!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e670522d4165f9%3A0xaa7a02bed27cded!2s3+Avenue+Maurice+d'Ocagne%2C+75014+Paris!5e0!3m2!1sfr!2sfr!4v1441540231121"
                                     width="600" height="450" frameBorder="0" allowFullScreen="allowFullScreen"></iframe>
                             </header>
+
+                            <Gallery images={JULESNOEL_IMAGES.map(({ id, src, thumbnail}) => ({
+                                src,
+                                thumbnail,
+                            }))} />
                         </section>
 
                         <section id="ripoche" className="main special">
                             <header className="major">
-                                <h2>SALLE RIPOCHE</h2>
+                                <h1>SALLE RIPOCHE</h1>
                                 <p>
                                     58 rue Maurice Ripoche<br/>
                                     75014 PARIS<br/>
@@ -177,7 +192,7 @@ class Salles extends React.Component {
 
                         <section id="bercy" className="main special">
                             <header className="major">
-                                <h2>SALLE PARIS BERCY 12</h2>
+                                <h1>SALLE PARIS BERCY 12</h1>
                                 <p>
                                     10 Place Léonard Bernstein<br/>
                                     75012 Paris<br/>
