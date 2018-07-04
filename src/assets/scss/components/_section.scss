@@ -16,7 +16,7 @@
 		&.major {
 			margin-bottom: (_size(element-margin) * 1.5);
 
-			h2 {
+			h1 {
 				font-size: 2em;
 
 				&:after {
@@ -88,7 +88,7 @@
 	@mixin color-section($p: null) {
 		header {
 			&.major {
-				h2 {
+				h1 {
 					&:after {
 						background-color: _palette($p, border);
 

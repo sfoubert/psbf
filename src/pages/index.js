@@ -26,9 +26,7 @@ import thumbClub06 from '../assets/images/club/thumb/assaut-06.jpg'
 
 const DEFAULT_IMAGES = [
     { id: '1', src: picClub01, thumbnail: thumbClub01, caption: 'Challenge IDF', description: 'Compétition régionale à partir de gant rouge'},
-    { id: '2', src: picClub02, thumbnail: thumbClub02, caption: 'Elite A', description: 'Championnat combat avec l\'elite de la boxe française'},
     { id: '6', src: picClub06, thumbnail: thumbClub06, caption: 'Photo de cours', description: 'Des cours durant les vacances scolaires et l\'été'},
-    { id: '4', src: picClub04, thumbnail: thumbClub04, caption: 'Elite A', description: 'Championnat combat avec l\'elite de la boxe française'},
     { id: '5', src: picClub05, thumbnail: thumbClub05, caption: 'Photo de cours', description: 'Du renforcement musculaire, de la préparation physique'},
     { id: '3', src: picClub03, thumbnail: thumbClub03, caption: 'Photo de cours', description: 'Des assauts libres contrôlés, techniques et sans puissance'},
 
@@ -73,13 +71,13 @@ class Index extends React.Component {
                         <span className="image main"><img src={picBandeau} alt=""/></span>
 
                         <header className="major">
-                            <h2>Le club</h2>
+                            <h1>Le club</h1>
                             <p>
                                 La rentrée sportive de notre section Boxe Française aura lieu le
                                 &nbsp;<strong>lundi 3 septembre 2018</strong>.
                             </p>
                             <p>
-                                Le PSBF est un nouveau club parisien composé d'enseignants expérimentés et passionnés.
+                                PSBF est un club parisien composé d'enseignants expérimentés et passionnés.
                                 Les cours sont tous niveaux, et ouverts aussi bien aux loisirs et aux compétiteurs.
                             </p>
                             <p>

@@ -66,7 +66,7 @@ class Savate extends React.Component {
                     <section id="savate" className="main special">
                         <span className="image main"><img src={picBandeau} alt=""/></span>
                         <header className="major">
-                            <h2>La Savate</h2>
+                            <h1>La Savate</h1>
                         </header>
 
                         <p>
@@ -95,7 +95,7 @@ class Savate extends React.Component {
 
                         <section id="grades" className="main special">
                             <header className="major">
-                                <h2>Les grades</h2>
+                                <h1>Les grades</h1>
                             </header>
                             <p>
                                 Plusieurs sessions de passages de grades ont lieu durant la saison sportive, afin d'evaluer

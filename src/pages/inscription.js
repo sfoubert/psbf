@@ -44,7 +44,7 @@ class Inscription extends React.Component {
                         <span className="image main"><img src={picBandeau} alt=""/></span>
 
                         <header className="major">
-                            <h2>Inscription</h2>
+                            <h1>Inscription</h1>
                             <p>Vous êtes les bienvenus pour participer à un cours d’essai, il suffit de vous présenter
                                 avec une tenue de sport à l’un des cours hebdomadaires.</p>
                         </header>
