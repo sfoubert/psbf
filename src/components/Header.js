@@ -1,7 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-import picLogo from '../assets/images/logo-black.svg'
+import picLogo from '../assets/images/logo.svg'
+import picLogoBlack from '../assets/images/logo-black.svg'
 
 const Header = (props) => (
     <div>
@@ -16,12 +17,12 @@ const Header = (props) => (
             <meta property="og:type" content="website"/>
             <meta property="og:title" content="Le club | PSBF Paris Savate Boxe Française"/>
             <meta property="og:description" content="Club de Savate Boxe Française sur Paris"/>
-            <meta property="og:image" content={picLogo}/>
+            <meta property="og:image" content={picLogoBlack}/>
 
             <meta name="twitter:card" content="summary_large_image"/>
             <meta name="twitter:title" content="Le club | PSBF Paris Savate Boxe Française"/>
             <meta name="twitter:description" content="Club de Savate Boxe Française sur Paris"/>
-            <meta name="twitter:image" content={picLogo}/>
+            <meta name="twitter:image" content={picLogoBlack}/>
 
             <meta name="robots" content="index,follow"/>
             <link rel="canonical" href="http://www.parissavate.fr"/>
