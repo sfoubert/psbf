@@ -8,8 +8,13 @@
 
 	section, article {
 		&.special {
-			text-align: center;
+			text-align: left;
+
+			h1 {
+				text-align: center;
+			}
 		}
+
 	}
 
 	header {
@@ -55,6 +60,7 @@
 	footer {
 		&.major {
 			margin-top: (_size(element-margin) * 1.5);
+			text-align: center;
 		}
 	}
 
@@ -89,6 +95,16 @@
 		header {
 			&.major {
 				h1 {
+					&:after {
+						background-color: _palette($p, border);
+
+						@if $p == 'invert' {
+							@include vendor('background-image', 'linear-gradient(90deg, #{_palette(accent1)}, #{_palette(accent3)}, #{_palette(accent5)})');
+						}
+					}
+				}
+
+				h2 {
 					&:after {
 						background-color: _palette($p, border);
 

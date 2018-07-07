@@ -28,7 +28,6 @@ import thumbProf07 from '../assets/images/profs/thumb/seb-01.jpg'
 import thumbProf08 from '../assets/images/profs/thumb/seb-dom-jerome-01.jpg'
 
 const DEFAULT_IMAGES = [
-    { id: '1', src: picProf01, thumbnail: thumbProf01},
     { id: '2', src: picProf02, thumbnail: thumbProf02},
     { id: '3', src: picProf03, thumbnail: thumbProf03},
     { id: '4', src: picProf04, thumbnail: thumbProf04},
@@ -70,12 +69,12 @@ class Planning extends React.Component {
 
                 <div id="main">
 
-                    <section id="planning" className="main">
+                    <section id="planning" className="main special">
                         <span className="image main"><img src={picBandeau} alt=""/></span>
 
                         <div className="main special">
                             <header className="major">
-                                <h1>Planning</h1>
+                                <h1>Le planning</h1>
                             </header>
                             <p>Plusieurs horaires et salles sur paris sont proposés pour les entraînements tout au
                                 long de la semaine. Chaque adhérent accède à tous les créneaux afin de suivre les
@@ -85,19 +84,16 @@ class Planning extends React.Component {
                             <p>
                                 <span><img className="image main" src={picHoraires} alt=""/></span>
                             </p>
-                            <ul className="actions">
-                                <li><Link to="/salles" className="button">Les salles</Link></li>
-                            </ul>
                         </div>
 
                     </section>
 
 
-                    <section id="profs" className="main">
+                    <section id="profs" className="main special">
 
                         <div className="content">
                             <header className="major">
-                                <h1>Les monitrices et moniteurs</h1>
+                                <h2>Les monitrices et moniteurs</h2>
                             </header>
 
                             <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail}) => ({

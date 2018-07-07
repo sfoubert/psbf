@@ -108,13 +108,13 @@ class Salles extends React.Component {
 
                 <div id="main">
 
-                    <section id="salles" className="main special">
-
-                        <span className="image main"><img src={picBandeau} alt=""/></span>
-
                         <section id="dumas" className="main special">
+
+                            <span className="image main"><img src={picBandeau} alt=""/></span>
+
                             <header className="major">
-                                <h1>SALLE MY FITNESS STUDIO</h1>
+                                <h1>Les salles</h1>
+                                <h2>SALLE MY FITNESS STUDIO</h2>
                                 <p>
                                     91 Rue Alexandre Dumas<br/>
                                     75020 PARIS<br/>
@@ -133,7 +133,7 @@ class Salles extends React.Component {
                         </section>
                         <section id="florimont" className="main special">
                             <header className="major">
-                                <h1>SALLE FLORIMONT</h1>
+                                <h2>SALLE FLORIMONT</h2>
                                 <p>
                                     Espace Maindron<br/>
                                     6 Rue Hippolyte Maindron<br/>
@@ -153,7 +153,7 @@ class Salles extends React.Component {
 
                         <section id="julesnoel" className="main special">
                             <header className="major">
-                                <h1>STADE JULES NOEL</h1>
+                                <h2>STADE JULES NOEL</h2>
                                 <p>
                                     3 Avenue Maurice d'Ocagne<br/>
                                     75014 PARIS<br/>
@@ -173,7 +173,7 @@ class Salles extends React.Component {
 
                         <section id="ripoche" className="main special">
                             <header className="major">
-                                <h1>SALLE RIPOCHE</h1>
+                                <h2>SALLE RIPOCHE</h2>
                                 <p>
                                     58 rue Maurice Ripoche<br/>
                                     75014 PARIS<br/>
@@ -192,7 +192,7 @@ class Salles extends React.Component {
 
                         <section id="bercy" className="main special">
                             <header className="major">
-                                <h1>SALLE PARIS BERCY 12</h1>
+                                <h2>SALLE PARIS BERCY 12</h2>
                                 <p>
                                     10 Place Léonard Bernstein<br/>
                                     75012 Paris<br/>
@@ -211,14 +211,13 @@ class Salles extends React.Component {
                                 thumbnail,
                             }))} />
 
-                        </section>
 
-                        <footer className="major">
-                            <ul className="actions">
-                                <li><Link to="/inscription" className="button">Inscription</Link></li>
-                            </ul>
-                        </footer>
-                    </section>
+                            <footer className="major">
+                                <ul className="actions">
+                                    <li><Link to="/inscription" className="button">Inscription</Link></li>
+                                </ul>
+                            </footer>
+                        </section>
 
                 </div>
             </div>
