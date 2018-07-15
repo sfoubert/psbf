@@ -68,13 +68,14 @@ class Index extends React.Component {
 
                     <section id="club" className="main special">
 
-                        <span className="image main"><img src={picBandeau} alt=""/></span>
+                        <span className="image main"><img src={picBandeau} alt="bandeau"/></span>
 
                         <header className="major">
                             <h1>Le club</h1>
                             <p>
                                 La rentrée sportive de notre section Boxe Française aura lieu le
-                                &nbsp;<strong>lundi 3 septembre 2018</strong>.
+                                &nbsp;<strong>lundi 3 septembre 2018</strong>. <br/>
+                                Consultez la <Link to="/faq-2018-2019">FAQ</Link> pour plus d'informations.
                             </p>
                             <p>
                                 PSBF est un club parisien composé d'enseignants expérimentés et passionnés.

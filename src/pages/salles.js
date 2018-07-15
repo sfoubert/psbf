@@ -110,7 +110,7 @@ class Salles extends React.Component {
 
                         <section id="dumas" className="main special">
 
-                            <span className="image main"><img src={picBandeau} alt=""/></span>
+                            <span className="image main"><img src={picBandeau} alt="bandeau"/></span>
 
                             <header className="major">
                                 <h1>Les salles</h1>
@@ -133,7 +133,7 @@ class Salles extends React.Component {
                         </section>
                         <section id="florimont" className="main special">
                             <header className="major">
-                                <h2>SALLE FLORIMONT</h2>
+                                <h2>SALLE MAINDRON</h2>
                                 <p>
                                     Espace Maindron<br/>
                                     6 Rue Hippolyte Maindron<br/>

@@ -6,7 +6,7 @@ const Footer = (props) => (
             <h2>Contact</h2>
             <dl className="alt">
                 <dt>Phone</dt>
-                <dd>06 45 47 48 64</dd>
+                <dd>07 77 86 30 43</dd>
                 <dt>Email</dt>
                 <dd><a href="#">parissavate@gmail.com</a></dd>
             </dl>
