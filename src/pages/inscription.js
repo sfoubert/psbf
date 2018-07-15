@@ -41,7 +41,7 @@ class Inscription extends React.Component {
 
                     <section id="inscription" className="main special">
 
-                        <span className="image main"><img src={picBandeau} alt=""/></span>
+                        <span className="image main"><img src={picBandeau} alt="bandeau"/></span>
 
                         <header className="major">
                             <h1>Inscription</h1>

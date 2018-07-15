@@ -15,6 +15,8 @@ import picSavate03 from '../assets/images/savate/assaut-03.jpg'
 import picSavate04 from '../assets/images/savate/assaut-04.jpg'
 import picSavate05 from '../assets/images/savate/assaut-05.jpg'
 import picCharlemont from '../assets/images/savate/charlemont.jpg'
+import picEquipements01 from '../assets/images/savate/equipements/chaussure.jpg'
+import picEquipements02 from '../assets/images/savate/equipements/gant.jpg'
 
 import picGantBleu from '../assets/images/grades/gant_bleu.jpg'
 import picGantVert from '../assets/images/grades/gant_vert.jpg'
@@ -63,7 +65,7 @@ class Savate extends React.Component {
                 <div id="main">
 
                     <section id="savate" className="main special">
-                        <span className="image main"><img src={picBandeau} alt=""/></span>
+                        <span className="image main"><img src={picBandeau} alt="bandeau"/></span>
                         <header className="major">
                             <h1>La Savate</h1>
                         </header>
@@ -128,7 +130,6 @@ class Savate extends React.Component {
                                 champion de boxe anglaise.
                             </p>
 
-
                             <ul className="features">
                                 <li>
                                     <span className="image main">
@@ -169,7 +170,7 @@ class Savate extends React.Component {
                             grand sport de combat de demain en étant le leader des sports pieds poings.
                             Et comme l’assure le président de la FFSBF « la boxe française permet à la fois
                             une pratique ludique, une maîtrise corporelle en milieu urbain et une exigence
-                            sportive au plus haut niveau
+                            sportive au plus haut niveau.
                         </p>
                     </section>
 
@@ -240,6 +241,66 @@ class Savate extends React.Component {
                                 <li><Link to="/planning" className="button">Le planning</Link></li>
                             </ul>
                         </footer>
+
+                    </section>
+
+                    <section id="equipements" className="main special">
+                        <header className="major">
+                            <h1>Equipements nécessaires</h1>
+                        </header>
+
+                        <ul>
+                            <li>Certificat médical OBLIGATOIRE</li>
+                            <li>Chaussures sans œillets de préférence – baskets autorisées pour les débutants</li>
+                            <li>Tenue intégrale</li>
+                            <li>Short, survêtement, T shirt</li>
+                            <li>Protège-dents OBLIGATOIRE</li>
+                            <li>Coquille OBLIGATOIRE (sinon c’est à vos risques et ….. périls)</li>
+                            <li>Plastron pour les filles (c’est aussi fragile à ce niveau)</li>
+                            <li>Gants On vous en prête pour commencer</li>
+                            <li>Mitaines ou bandes Pour protéger les mains et limiter la transpiration dans les gants
+                            </li>
+                        </ul>
+
+                        <ul className="features">
+                            <li>
+                                    <span className="image main">
+                                        <img src={picEquipements01} alt="chaussures"/>
+                                    </span>
+                            </li>
+                            <li>
+                                    <span className="image main">
+                                        <img src={picEquipements02} alt="gants"/>
+                                    </span>
+                            </li>
+                        </ul>
+
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>CATÉGORIE DE POIDS</th>
+                                <th>TAILLE DES GANTS</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Moins de 60 kg</td>
+                                <td>8 onces (OZ)</td>
+                            </tr>
+                            <tr>
+                                <td>De 60 à 75 kg</td>
+                                <td>10 onces (OZ)</td>
+                            </tr>
+                            <tr>
+                                <td>De 75 à 85 kg</td>
+                                <td>12 onces (OZ)</td>
+                            </tr>
+                            <tr>
+                                <td>Plus de 85 kg</td>
+                                <td>14 onces (OZ)</td>
+                            </tr>
+                            </tbody>
+                        </table>
 
                     </section>
 

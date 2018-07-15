@@ -7,8 +7,8 @@ import get from 'lodash/get'
 import Nav from '../components/Nav'
 import Gallery from "../components/Gallery";
 
-import picHoraires from '../assets/images/horaires.png'
 import picBandeau from '../assets/images/bercy-01.jpg'
+import picHoraires from '../assets/images/planning/horaires.png'
 import picProf01 from '../assets/images/profs/dom-01.jpg'
 import picProf02 from '../assets/images/profs/dom-02.jpg'
 import picProf03 from '../assets/images/profs/jeremie-01.jpg'
@@ -70,7 +70,7 @@ class Planning extends React.Component {
                 <div id="main">
 
                     <section id="planning" className="main special">
-                        <span className="image main"><img src={picBandeau} alt=""/></span>
+                        <span className="image main"><img src={picBandeau} alt="bandeau"/></span>
 
                         <div className="main special">
                             <header className="major">
@@ -82,7 +82,7 @@ class Planning extends React.Component {
                                 de la séance pour vous changer.
                             </p>
                             <p>
-                                <span><img className="image main" src={picHoraires} alt=""/></span>
+                                <span><img className="image main" src={picHoraires} alt="horaires"/></span>
                             </p>
                         </div>
 
