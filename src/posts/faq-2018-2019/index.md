@@ -1,7 +1,6 @@
 ---
-title: FAQ 2018-2019
+title: Foire Aux Questions saison 2018-2019
 date: "2018-06-29T22:40:32.169Z"
-path: "/faq-2018-2019/"
 ---
 
 La nouvelle saison commence bientôt. 

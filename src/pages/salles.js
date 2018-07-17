@@ -114,6 +114,12 @@ class Salles extends React.Component {
 
                             <header className="major">
                                 <h1>Les salles</h1>
+
+                                <p>
+                                    Voici les adresses des différentes salles parisiennes (dans le 12ème / 14ème / 20ème),
+                                    permet de pratiquer la Savate Boxe Française.
+                                </p>
+
                                 <h2>SALLE MY FITNESS STUDIO</h2>
                                 <p>
                                     91 Rue Alexandre Dumas<br/>
@@ -140,9 +146,10 @@ class Salles extends React.Component {
                                     75014 PARIS<br/>
                                     Métro : Pernety
                                 </p>
+
                                 <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.170117378261!2d2.395119157723748!3d48.85496635439102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d88222e48db%3A0x242897b48b830f56!2s91+Rue+Alexandre+Dumas%2C+75020+Paris!5e0!3m2!1sfr!2sfr!4v1503692249761"
-                                    width="600" height="450" frameBorder="0" allowFullScreen="allowFullScreen"></iframe>
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.3462941019393!2d2.3202533156734604!3d48.83253297928507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671b48b140733%3A0xd8827eb0daaf37f5!2s6+Rue+Hippolyte+Maindron%2C+75014+Paris!5e0!3m2!1sfr!2sfr!4v1531856185145"
+                                    width="600" height="450" frameborder="0" allowFullScreen="allowFullScreen"></iframe>
                             </header>
 
                             <Gallery images={FLORIMONT_IMAGES.map(({ id, src, thumbnail}) => ({
@@ -160,9 +167,8 @@ class Salles extends React.Component {
                                     Métro: Portes de Vanves ou d'Orléans<br/>
                                     Tramway T3a: Didot ou Jean Moulin
                                 </p>
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21014.190064212304!2d2.314917!3d48.824378!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e670522d4165f9%3A0xaa7a02bed27cded!2s3+Avenue+Maurice+d'Ocagne%2C+75014+Paris!5e0!3m2!1sfr!2sfr!4v1441540231121"
-                                    width="600" height="450" frameBorder="0" allowFullScreen="allowFullScreen"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.7839903633944!2d2.3121954145790573!3d48.82418277928413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e670522d4165f9%3A0xaa7a02bed27cded!2s3+Avenue+Maurice+d&#39;Ocagne%2C+75014+Paris!5e0!3m2!1sfr!2sfr!4v1531856373567"
+                                        width="600" height="450" frameborder="0" allowfullscreen="allowFullScreen"></iframe>
                             </header>
 
                             <Gallery images={JULESNOEL_IMAGES.map(({ id, src, thumbnail}) => ({
