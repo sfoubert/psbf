@@ -7,6 +7,7 @@ import get from 'lodash/get'
 import Header from '../components/Header'
 import Nav from '../components/Nav'
 import Gallery from "../components/Gallery";
+import BlogPosts from '../components/BlogPosts'
 
 import picBandeau from '../assets/images/bercy-01.jpg'
 
@@ -49,6 +50,7 @@ class Index extends React.Component {
     }
 
     render() {
+        const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
         return (
             <div>
@@ -97,10 +99,16 @@ class Index extends React.Component {
                             description
                         }))} />
 
+                    </section>
+
+                    <section id="actualites" className="main special">
+
+                        <h2>Actualités</h2>
+                        <BlogPosts posts={posts}/>
+
                         <footer className="major">
                             <ul className="actions">
                                 <li><Link to="/savate" className="button">La savate</Link></li>
-                                <li><Link to="/faq-2018-2019" className="button">FAQ</Link></li>
                             </ul>
                         </footer>
                     </section>
@@ -123,6 +131,20 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "DD MMMM, YYYY")
+            title
+          }
+        }
       }
     }
   }

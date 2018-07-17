@@ -2,12 +2,13 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import picLogo from '../assets/images/logo.svg'
+import picFavIcon from '../assets/images/favicon.ico'
 import picLogoBlack from '../assets/images/logo-black.svg'
 
 const Header = (props) => (
     <div>
         <Helmet>
-            <meta name="description" content="PSBF Paris Savate Boxe Française est un club de Savate Boxe Française sur Paris"/>
+            <meta name="description" content="PSBF Paris Savate Boxe Française est un club de Savate Boxe Française sur Paris. La rentrée sportive de notre section Boxe Française commence début septembre 2018."/>
 
             <meta itemProp="name" content="Le club | PSBF Paris Savate Boxe Française"/>
             <meta itemProp="description" content="Club de Savate Boxe Française sur Paris"/>
@@ -26,6 +27,7 @@ const Header = (props) => (
 
             <meta name="robots" content="index,follow"/>
             <link rel="canonical" href="http://www.parissavate.fr"/>
+            <link rel="icon" href={picFavIcon} />
         </Helmet>
 
         <header id="header" className="alt">

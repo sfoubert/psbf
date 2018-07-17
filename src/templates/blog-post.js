@@ -18,7 +18,17 @@ class BlogPostTemplate extends React.Component {
 
             <div id="main">
                 <section id="post" className="main">
+                    <ul className="actions">
+                        <li><Link to="/" className="button">&lt;&nbsp;Retour</Link></li>
+                    </ul>
+
                     <div dangerouslySetInnerHTML={{__html: post.html}}/>
+
+                    <footer className="major">
+                        <ul className="actions">
+                            <li><Link to="/" className="button">Retour</Link></li>
+                        </ul>
+                    </footer>
                 </section>
             </div>
 
@@ -30,14 +40,14 @@ class BlogPostTemplate extends React.Component {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
+  query BlogPostBySlug($slug: String!) {
     site {
       siteMetadata {
         title
         author
       }
     }
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
       frontmatter {
