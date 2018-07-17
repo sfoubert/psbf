@@ -72,6 +72,17 @@ module.exports = {
                 policy: [{ userAgent: '*', allow: '/' }]
             }
         },
+        {
+            resolve: 'gatsby-plugin-purify-css',
+            options: {
+                /* Defaults */
+                styleId: 'gatsby-inlined-css',
+                purifyOptions: {
+                    info: true,
+                    minify: true
+                }
+            }
+        },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         `gatsby-plugin-react-helmet`,
