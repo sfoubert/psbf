@@ -43,11 +43,11 @@ class Index extends React.Component {
 
     _handleWaypointEnter = () => {
         this.setState(() => ({stickyNav: false}));
-    }
+    };
 
     _handleWaypointLeave = () => {
         this.setState(() => ({stickyNav: true}));
-    }
+    };
 
     render() {
         const posts = get(this, 'props.data.allMarkdownRemark.edges');
@@ -56,7 +56,8 @@ class Index extends React.Component {
             <div>
                 <Header />
 
-                <Helmet title={'Le club | ' + get(this, 'props.data.site.siteMetadata.title')}>
+                <Helmet
+                    title={get(this, 'props.data.site.siteMetadata.title') + ' | Présentation du club et les dernières actualités'}>
                 </Helmet>
 
                 <Waypoint
@@ -81,11 +82,12 @@ class Index extends React.Component {
                             </p>
                             <p>
                                 PSBF est un club parisien composé d'enseignants expérimentés et passionnés.
-                                Les cours sont tous niveaux, et ouverts aussi bien aux loisirs et aux compétiteurs.
+                                Les cours sont tout niveaux, et ouverts aussi bien aux loisirs et aux compétiteurs.
                             </p>
                             <p>
-                                Retrouvez la présentation du club, les horaires et lieux sur ce site.
-                                L'inscription annuelle, permet d'accèder à l'ensemble des créneaux et salles proposées sur Paris.
+                                Retrouvez sur ce site la présentation du club, les horaires et les adresses des différentes
+                                salles sur Paris. L'inscription annuelle, permet d'accèder à l'ensemble des créneaux et
+                                salles proposées sur Paris.
                             </p>
                             <p>
                                 Les couleurs du club sont le Bleu et Rouge.
@@ -122,7 +124,7 @@ class Index extends React.Component {
 
 Index.propTypes = {
     route: React.PropTypes.object,
-}
+};
 
 export default Index
 
@@ -148,4 +150,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

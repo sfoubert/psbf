@@ -2,7 +2,7 @@ module.exports = {
     siteMetadata: {
         title: 'PSBF, Paris Savate Boxe Française',
         author: 'Sébastien Foubert',
-        description: 'PSBF Paris Savate Boxe Française, Club de Savate Boxe Française sur Paris',
+        description: 'PSBF Paris Savate Boxe Française est un club de boxe française sur Paris proposant différents cours tout niveaux dans la semaine, aussi bien loisir que compétiteur. La rentrée sportive de notre section Boxe Française commence début septembre 2018',
         siteUrl: 'http://www.parissavate.fr',
     },
     pathPrefix: '/',

@@ -41,18 +41,19 @@ class Savate extends React.Component {
 
     _handleWaypointEnter = () => {
         this.setState(() => ({stickyNav: false}));
-    }
+    };
 
     _handleWaypointLeave = () => {
         this.setState(() => ({stickyNav: true}));
-    }
+    };
 
     render() {
 
         return (
             <div>
 
-                <Helmet title={'Savate | ' + get(this, 'props.data.site.siteMetadata.title')}>
+                <Helmet
+                    title={'Présentation de la Savate, un peu d\'histoire sur les origines, les grades, les équipements nécessaires | ' + get(this, 'props.data.site.siteMetadata.title')}>
                 </Helmet>
 
                 <Waypoint
@@ -312,7 +313,7 @@ class Savate extends React.Component {
 
 Savate.propTypes = {
     route: React.PropTypes.object,
-}
+};
 
 export default Savate
 
@@ -324,4 +325,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

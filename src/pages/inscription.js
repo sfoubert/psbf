@@ -17,17 +17,18 @@ class Inscription extends React.Component {
 
     _handleWaypointEnter = () => {
         this.setState(() => ({stickyNav: false}));
-    }
+    };
 
     _handleWaypointLeave = () => {
         this.setState(() => ({stickyNav: true}));
-    }
+    };
 
     render() {
 
         return (
             <div>
-                <Helmet title={'Inscription | ' + get(this, 'props.data.site.siteMetadata.title')}>
+                <Helmet
+                    title={'Inscription pour un cours d\' essai ou pour la saison sportive | ' + get(this, 'props.data.site.siteMetadata.title')}>
                 </Helmet>
 
                 <Waypoint
@@ -80,7 +81,7 @@ class Inscription extends React.Component {
 
 Inscription.propTypes = {
     route: React.PropTypes.object,
-}
+};
 
 export default Inscription
 
@@ -92,4 +93,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
