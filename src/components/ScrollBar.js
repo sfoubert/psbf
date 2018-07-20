@@ -17,7 +17,7 @@ class ScrollBar extends React.Component {
           id="hoge" style={{
           width: `${width}%`,
           height,
-          backgroundColor: "#40aa94"
+          backgroundColor: "#05409a"
         }} />
       </div>
     );
