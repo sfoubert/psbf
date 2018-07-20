@@ -46,18 +46,18 @@ class Planning extends React.Component {
 
     _handleWaypointEnter = () => {
         this.setState(() => ({stickyNav: false}));
-    }
+    };
 
     _handleWaypointLeave = () => {
         this.setState(() => ({stickyNav: true}));
-    }
+    };
 
     render() {
 
         return (
             <div>
 
-                <Helmet title={'Planning | ' + get(this, 'props.data.site.siteMetadata.title')}>
+                <Helmet title={'Le planning horaire et les moniteurs | ' + get(this, 'props.data.site.siteMetadata.title')}>
                 </Helmet>
 
                 <Waypoint
@@ -130,4 +130,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

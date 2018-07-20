@@ -8,9 +8,9 @@ import picLogoBlack from '../assets/images/logo-black.svg'
 const Header = (props) => (
     <div>
         <Helmet>
-            <meta name="description" content="PSBF Paris Savate Boxe Française est un club de Savate Boxe Française sur Paris. La rentrée sportive de notre section Boxe Française commence début septembre 2018."/>
+            <meta name="description" content="PSBF Paris Savate Boxe Française est un club de Savate Boxe Française sur Paris. Les cours sont tout niveaux, et ouverts aussi bien aux loisirs et aux compétiteurs. La rentrée sportive de notre section Boxe Française commence début septembre 2018."/>
 
-            <meta itemProp="name" content="Le club | PSBF Paris Savate Boxe Française"/>
+            <meta itemProp="name" content="PSBF Paris Savate Boxe Française"/>
             <meta itemProp="description" content="Club de Savate Boxe Française sur Paris"/>
             <meta itemProp="image" content={picLogo}/>
 
@@ -35,6 +35,6 @@ const Header = (props) => (
             <p>Club de Savate Boxe Française sur Paris.</p>
         </header>
     </div>
-)
+);
 
 export default Header

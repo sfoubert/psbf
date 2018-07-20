@@ -5,8 +5,8 @@ import get from 'lodash/get'
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const post = this.props.data.markdownRemark;
+    const siteTitle = get(this.props, 'data.site.siteMetadata.title');
 
     return (
         <div>
@@ -56,4 +56,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

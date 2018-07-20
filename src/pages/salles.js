@@ -85,18 +85,18 @@ class Salles extends React.Component {
 
     _handleWaypointEnter = () => {
         this.setState(() => ({stickyNav: false}));
-    }
+    };
 
     _handleWaypointLeave = () => {
         this.setState(() => ({stickyNav: true}));
-    }
+    };
 
     render() {
 
         return (
             <div>
 
-                <Helmet title={'Salles | ' + get(this, 'props.data.site.siteMetadata.title')}>
+                <Helmet title={'Les adresses des salles d\'entraînement | ' + get(this, 'props.data.site.siteMetadata.title')}>
                 </Helmet>
 
                 <Waypoint
@@ -241,4 +241,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
