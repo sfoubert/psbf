@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import '../assets/scss/main.scss'
 
 import Footer from '../components/Footer'
+import ManageScrollBar from "../components/ScrollBar";
 
 class Template extends React.Component {
   constructor(props) {
@@ -30,6 +31,7 @@ class Template extends React.Component {
     return (
       <div className={`body ${this.state.loading}`}>
         <div id="wrapper">
+          <ManageScrollBar/>
 
           {children()}
           <Footer />
