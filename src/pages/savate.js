@@ -53,7 +53,7 @@ class Savate extends React.Component {
             <div>
 
                 <Helmet
-                    title={'Présentation de la Savate, un peu d\'histoire sur les origines, les grades, les équipements nécessaires | ' + get(this, 'props.data.site.siteMetadata.title')}>
+                    title={'Présentation des origines de la Savate, les grades et équipements | ' + get(this, 'props.data.site.siteMetadata.title')}>
                 </Helmet>
 
                 <Waypoint
