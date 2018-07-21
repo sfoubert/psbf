@@ -57,7 +57,7 @@ class Index extends React.Component {
                 <Header />
 
                 <Helmet
-                    title={get(this, 'props.data.site.siteMetadata.title') + ' | Présentation du club et les dernières actualités'}>
+                    title={get(this, 'props.data.site.siteMetadata.title') + ' | Présentation du club et actualités'}>
                 </Helmet>
 
                 <Waypoint

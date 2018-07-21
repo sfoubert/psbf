@@ -28,7 +28,7 @@ class Inscription extends React.Component {
         return (
             <div>
                 <Helmet
-                    title={'Inscription pour un cours d\' essai ou pour la saison sportive | ' + get(this, 'props.data.site.siteMetadata.title')}>
+                    title={'Inscription pour la saison sportive ou cours d\'essai | ' + get(this, 'props.data.site.siteMetadata.title')}>
                 </Helmet>
 
                 <Waypoint
