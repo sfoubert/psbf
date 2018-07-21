@@ -98,8 +98,24 @@
 			& + #main {
 				padding-top: 0;
 			}
-		}
 
+			ul {
+				li {
+					a {
+						padding: 0 0.25em;
+					}
+				}
+			}
+		}
+		@include breakpoint(xxsmall) {
+			ul {
+				li {
+					span.logo {
+						display: none;
+					}
+				}
+			}
+		}
 		.logo{
 			>img{
 				height: 42px;
