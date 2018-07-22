@@ -103,3 +103,13 @@
 	#lightboxBackdrop {
 		z-index: 12001;
 	}
+
+	section#actualites {
+		h3 a {
+			font-size: 1em;
+			font-weight: bold;
+			&:hover {
+				color: _palette(bg3);
+			}
+		}
+	}
