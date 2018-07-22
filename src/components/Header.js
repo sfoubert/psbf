@@ -1,6 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
+import Scroll from './Scroll'
+
 import picLogo from '../assets/images/logo.svg'
 import picFavIcon from '../assets/images/favicon.ico'
 import picLogoBlack from '../assets/images/logo-black.svg'
@@ -32,7 +34,11 @@ const Header = (props) => (
 
         <header id="header" className="alt">
             <span className="image main"><img src={picLogo} alt="P.S.B.F"/></span>
-            <p>Club de Savate Boxe Française sur Paris.</p>
+            <h3>Club de Boxe Française sur Paris</h3>
+
+            <Scroll type="id" element="club">
+                <a href="#" className="icon fa-arrow-circle-o-down arrow"></a>
+            </Scroll>
         </header>
     </div>
 );

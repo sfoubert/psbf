@@ -47,13 +47,21 @@
 					max-width: 50%;
 				}
 			}
+
+			.arrow {
+				font-size: 3em;
+			}
+
+			.main.image {
+				margin: 0 0 0.5em 0;
+			}
 		}
 
 		@include breakpoint(large) {
 			@include padding(2em, 2em, (0, 0, -2em, 0));
 
 			&.alt {
-				@include padding(3em, 2em, (1em, 0, 0, 0));
+				@include padding(0em, 2em, (1em, 0, 0, 0));
 			}
 		}
 
@@ -61,7 +69,7 @@
 			@include padding(3em, 2em, (0, 0, -2em, 0));
 
 			&.alt {
-				@include padding(3em, 2em, (1em, 0, 0, 0));
+				@include padding(0em, 2em, (1em, 0, 0, 0));
 			}
 		}
 
@@ -78,11 +86,16 @@
 			}
 
 			&.alt {
-				@include padding(3em, 2em, (1em, 0, 0, 0));
+				@include padding(0em, 2em, (1em, 0, 0, 0));
 
 				h1 {
 					font-size: 2.5em;
 				}
+
+				.arrow {
+					font-size: 2em;
+				}
+
 			}
 		}
 
@@ -90,7 +103,7 @@
 			@include padding(3em, 1.5em, (0, 0, -1em, 0));
 
 			&.alt {
-				@include padding(3em, 1.5em, (1em, 0, 0, 0));
+				@include padding(0em, 1.5em, (1em, 0, 0, 0));
 			}
 		}
 
@@ -98,7 +111,7 @@
 			@include padding(2.5em, 1em, (0, 0, -1em, 0));
 
 			&.alt {
-				@include padding(2.5em, 1em, (1em, 0, 0, 0));
+				@include padding(0.5em, 1em, (1em, 0, 0, 0));
 			}
 		}
 
