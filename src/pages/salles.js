@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import get from 'lodash/get'
 
 import Nav from '../components/Nav'
-import Gallery from "../components/Gallery";
+import SallesSwipe from '../components/SallesSwipe'
 
 import picBandeau from '../assets/images/salles/ripoche-01.jpg'
 
@@ -80,7 +80,69 @@ class Salles extends React.Component {
         super(props);
         this.state = {
             stickyNav: false
-        }
+        };
+        this.salles = [
+            {
+                id: 'dumas',
+                name: 'My Fitness Studio',
+                street: '91 Rue Alexandre Dumas',
+                zipCode: '75020',
+                city: 'PARIS',
+                transport: 'Métro : Alexandre Dumas',
+                googleMaps: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.170117378261!2d2.395119157723748!3d48.85496635439102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d88222e48db%3A0x242897b48b830f56!2s91+Rue+Alexandre+Dumas%2C+75020+Paris!5e0!3m2!1sfr!2sfr!4v1503692249761',
+                images: DUMAS_IMAGES.map(({id, src, thumbnail}) => ({
+                    src,
+                    thumbnail,
+                }))
+            }, {
+                id: 'florimont',
+                name: 'Maindron',
+                street: '6 Rue Hippolyte Maindron',
+                zipCode: '75014',
+                city: 'PARIS',
+                transport: 'Métro : Pernety',
+                googleMaps: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.3462941019393!2d2.3202533156734604!3d48.83253297928507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671b48b140733%3A0xd8827eb0daaf37f5!2s6+Rue+Hippolyte+Maindron%2C+75014+Paris!5e0!3m2!1sfr!2sfr!4v1531856185145',
+                images: FLORIMONT_IMAGES.map(({id, src, thumbnail}) => ({
+                    src,
+                    thumbnail,
+                }))
+            }, {
+                id: 'julesnoel',
+                name: 'Jules Noël',
+                street: '3 Avenue Maurice d\'Ocagne',
+                zipCode: '75014',
+                city: 'PARIS',
+                transport: 'Métro: Portes de Vanves ou d\'Orléans ou Tramway T3a: Didot ou Jean Moulin',
+                googleMaps: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.8021291743453!2d2.3120576146852443!3d48.8238367110947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67052343d9359%3A0xbe12b55bb33f960c!2sCentre+sportif+Jules+No%C3%ABl!5e0!3m2!1sfr!2sfr!4v1532796752568',
+                images: JULESNOEL_IMAGES.map(({id, src, thumbnail}) => ({
+                    src,
+                    thumbnail,
+                }))
+            }, {
+                id: 'ripoche',
+                name: 'Ripoche',
+                street: '58 rue Maurice Ripoche',
+                zipCode: '75014',
+                city: 'PARIS',
+                transport: 'Métro : Pernety',
+                googleMaps: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.302622056803!2d2.3208441156735016!3d48.83336607928511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671b45826c4f5%3A0x65f1d198b244797f!2s58+Rue+Maurice+Ripoche%2C+75014+Paris!5e0!3m2!1sfr!2sfr!4v1502403407448',
+                images: RIPOCHE_IMAGES.map(({id, src, thumbnail}) => ({
+                    src,
+                    thumbnail,
+                }))
+            }, {
+                id: 'bercy',
+                name: 'Paris Bercy 12',
+                street: '10 Place Léonard Bernstein',
+                zipCode: '75012',
+                city: 'PARIS',
+                transport: 'Métro : Ligne 6 (arrêt Bercy) - Ligne 14 (arrêt Cour Saint Emilion). La salle se situe sous les grands escaliers qui mènent à la passerelle vers la  BNF, à côté des machines de musculation extérieures',
+                googleMaps: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.126610206226!2d2.3787305635587845!3d48.83672362261667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e672165e5225e1%3A0x92ed9bae0d379c47!2s10+Place+L%C3%A9onard+Bernstein%2C+75012+Paris!5e0!3m2!1sfr!2sfr!4v1505861471128',
+                images: BERCY_IMAGES.map(({id, src, thumbnail}) => ({
+                    src,
+                    thumbnail,
+                }))
+            }];
     }
 
     _handleWaypointEnter = () => {
@@ -108,138 +170,25 @@ class Salles extends React.Component {
 
                 <div id="main">
 
-                        <section id="dumas" className="main special">
+                    <section id="salles" className="main special">
+                        <span className="image main"><img src={picBandeau} alt="bandeau"/></span>
 
-                            <span className="image main"><img src={picBandeau} alt="bandeau"/></span>
+                        <header className="major">
+                            <h1>Les salles</h1>
+                            <p>
+                                Voici les adresses des différentes salles parisiennes (dans le 12ème / 14ème / 20ème),
+                                permet de pratiquer la Savate Boxe Française.
+                            </p>
+                        </header>
 
-                            <header className="major">
-                                <h1>Les salles</h1>
+                        <SallesSwipe salles={this.salles}/>
 
-                                <p>
-                                    Voici les adresses des différentes salles parisiennes (dans le 12ème / 14ème / 20ème),
-                                    permet de pratiquer la Savate Boxe Française.
-                                </p>
-
-                                <h2>SALLE MY FITNESS STUDIO</h2>
-                                <p>
-                                    91 Rue Alexandre Dumas<br/>
-                                    75020 PARIS<br/>
-                                    Métro : Alexandre Dumas
-                                </p>
-                                <div className="map-responsive">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.170117378261!2d2.395119157723748!3d48.85496635439102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d88222e48db%3A0x242897b48b830f56!2s91+Rue+Alexandre+Dumas%2C+75020+Paris!5e0!3m2!1sfr!2sfr!4v1503692249761"
-                                        width="600" height="450" frameBorder="0"
-                                        allowFullScreen="allowFullScreen"></iframe>
-                                </div>
-                            </header>
-
-                            <Gallery images={DUMAS_IMAGES.map(({ id, src, thumbnail}) => ({
-                                src,
-                                thumbnail,
-                            }))} />
-
-                        </section>
-                        <section id="florimont" className="main special">
-                            <header className="major">
-                                <h2>SALLE MAINDRON</h2>
-                                <p>
-                                    Espace Maindron<br/>
-                                    6 Rue Hippolyte Maindron<br/>
-                                    75014 PARIS<br/>
-                                    Métro : Pernety
-                                </p>
-
-                                <div className="map-responsive">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.3462941019393!2d2.3202533156734604!3d48.83253297928507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671b48b140733%3A0xd8827eb0daaf37f5!2s6+Rue+Hippolyte+Maindron%2C+75014+Paris!5e0!3m2!1sfr!2sfr!4v1531856185145"
-                                        width="600" height="450" frameborder="0"
-                                        allowFullScreen="allowFullScreen"></iframe>
-                                </div>
-                            </header>
-
-                            <Gallery images={FLORIMONT_IMAGES.map(({ id, src, thumbnail}) => ({
-                                src,
-                                thumbnail,
-                            }))} />
-                        </section>
-
-                        <section id="julesnoel" className="main special">
-                            <header className="major">
-                                <h2>STADE JULES NOEL</h2>
-                                <p>
-                                    3 Avenue Maurice d'Ocagne<br/>
-                                    75014 PARIS<br/>
-                                    Métro: Portes de Vanves ou d'Orléans<br/>
-                                    Tramway T3a: Didot ou Jean Moulin
-                                </p>
-                                <div className="map-responsive">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.7839903633944!2d2.3121954145790573!3d48.82418277928413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e670522d4165f9%3A0xaa7a02bed27cded!2s3+Avenue+Maurice+d&#39;Ocagne%2C+75014+Paris!5e0!3m2!1sfr!2sfr!4v1531856373567"
-                                        width="600" height="450" frameborder="0"
-                                        allowfullscreen="allowFullScreen"></iframe>
-                                </div>
-                            </header>
-
-                            <Gallery images={JULESNOEL_IMAGES.map(({ id, src, thumbnail}) => ({
-                                src,
-                                thumbnail,
-                            }))} />
-                        </section>
-
-                        <section id="ripoche" className="main special">
-                            <header className="major">
-                                <h2>SALLE RIPOCHE</h2>
-                                <p>
-                                    58 rue Maurice Ripoche<br/>
-                                    75014 PARIS<br/>
-                                    Métro : Pernety
-                                </p>
-                                <div className="map-responsive">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.302622056803!2d2.3208441156735016!3d48.83336607928511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671b45826c4f5%3A0x65f1d198b244797f!2s58+Rue+Maurice+Ripoche%2C+75014+Paris!5e0!3m2!1sfr!2sfr!4v1502403407448"
-                                        width="600" height="450" frameBorder="0"
-                                        allowFullScreen="allowFullScreen"></iframe>
-                                </div>
-                            </header>
-
-                            <Gallery images={RIPOCHE_IMAGES.map(({ id, src, thumbnail}) => ({
-                                src,
-                                thumbnail,
-                            }))} />
-                        </section>
-
-                        <section id="bercy" className="main special">
-                            <header className="major">
-                                <h2>SALLE PARIS BERCY 12</h2>
-                                <p>
-                                    10 Place Léonard Bernstein<br/>
-                                    75012 Paris<br/>
-                                    Métro : Ligne 6 (arrêt Bercy) - Ligne 14 (arrêt Cour Saint Emilion)<br/>
-                                    Accès : la salle se situe sous les grands escaliers qui mènent à la passerelle vers
-                                    la
-                                    BNF, à côté des machines de musculation extérieures
-                                </p>
-                                <div className="map-responsive">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.126610206226!2d2.3787305635587845!3d48.83672362261667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e672165e5225e1%3A0x92ed9bae0d379c47!2s10+Place+L%C3%A9onard+Bernstein%2C+75012+Paris!5e0!3m2!1sfr!2sfr!4v1505861471128"
-                                        width="600" height="450" frameBorder="0"
-                                        allowFullScreen="allowFullScreen"></iframe>
-                                </div>
-                            </header>
-
-                            <Gallery images={BERCY_IMAGES.map(({ id, src, thumbnail}) => ({
-                                src,
-                                thumbnail,
-                            }))} />
-
-
-                            <footer className="major">
-                                <ul className="actions">
-                                    <li><Link to="/inscription" className="button">Inscription</Link></li>
-                                </ul>
-                            </footer>
-                        </section>
+                        <footer className="major">
+                            <ul className="actions">
+                                <li><Link to="/inscription" className="button">Inscription</Link></li>
+                            </ul>
+                        </footer>
+                    </section>
 
                 </div>
             </div>

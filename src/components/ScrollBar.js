@@ -68,7 +68,7 @@ class ManageScrollBar extends React.Component {
   render() {
     return (
       <div>
-        <ScrollBar className="scrollbar" width={this.state.scrollBarRate}/>
+        <ScrollBar className="scrollbar" height={7} width={this.state.scrollBarRate}/>
       </div>
     )
   }
