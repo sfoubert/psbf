@@ -4,11 +4,8 @@ import ReactSwipe from 'react-swipe';
 
 import Gallery from './Gallery'
 
-const query = querystring.parse(window.location.search.slice(1));
-
-const startSlide = parseInt(query.startSlide, 10) || 0;
 const swipeOptions = {
-    startSlide: startSlide < 4 && startSlide >= 0 ? startSlide : 0,
+    startSlide: 0,
     auto: 0,
     speed: 300,
     disableScroll: true,
