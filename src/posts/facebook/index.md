@@ -3,6 +3,7 @@ title: Facebook
 date: "2018-07-20T23:11:32.169Z"
 ---
 
+N'hésitez pas à nous suivre sur les réseaux sociaux.
 Retrouvez toutes les photos, vidéos et actualités sur la nouvelle page Facebook et le groupe privé.
 
 # Groupe Facebook

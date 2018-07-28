@@ -8,12 +8,12 @@
     "gatsby-image": "^1.0.42",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-google-analytics": "^1.0.31",
+    "gatsby-plugin-purify-css": "^2.2.1",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-robots-txt": "^1.0.2",
     "gatsby-plugin-sass": "^1.0.23",
     "gatsby-plugin-sharp": "^1.6.41",
     "gatsby-plugin-sitemap": "^1.2.25",
-    "gatsby-plugin-purify-css": "^2.2.1",
     "gatsby-remark-copy-linked-files": "^1.5.30",
     "gatsby-remark-images": "^1.5.67",
     "gatsby-source-filesystem": "^1.5.27",
@@ -23,7 +23,9 @@
     "react-images": "^0.5.17",
     "react-scroll-to-element": "^0.2.0",
     "react-scrollspy": "^3.3.5",
-    "react-waypoint": "^8.0.1"
+    "react-swipe": "^5.1.1",
+    "react-waypoint": "^8.0.1",
+    "swipe-js-iso": "^2.0.4"
   },
   "homepage": "https://github.com/sfoubert/psbf",
   "keywords": [

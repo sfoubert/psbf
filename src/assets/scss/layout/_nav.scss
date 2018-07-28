@@ -74,7 +74,7 @@
 
 		&.alt {
 			position: fixed;
-			top: 10px;
+			top: _size(scrollbar);
 			padding: 0.5em 1em;
 			background-color: transparentize(_palette(invert, bg-alt), 0.05);
 			border-top-left-radius: 0;
