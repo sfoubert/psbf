@@ -34,6 +34,13 @@
       }
     }
 
+    .major {
+      h1 {
+        font-family: _font(family-header);
+        font-size: 2em;
+      }
+    }
+
     .btns > button {
       margin: 0.1em;
     }
@@ -114,7 +121,8 @@
 
 section#actualites {
   h3 a {
-    font-size: 1em;
+    font-family: _font(family-header);
+    font-size: 1.2em;
     font-weight: bold;
     &:hover {
       color: _palette(bg3);
