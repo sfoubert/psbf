@@ -25,6 +25,8 @@ import picJulesnoel02 from '../assets/images/salles/julesnoel-02.jpg'
 import picRipoche01 from '../assets/images/salles/ripoche-01.jpg'
 import picRipoche02 from '../assets/images/salles/ripoche-02.jpg'
 import picRipoche03 from '../assets/images/salles/ripoche-03.jpg'
+import picReuilly01 from '../assets/images/salles/reuilly-01.jpg'
+import picReuilly02 from '../assets/images/salles/reuilly-02.jpg'
 
 import thumbBercy01 from '../assets/images/salles/thumb/bercy-01.jpg'
 import thumbBercy02 from '../assets/images/salles/thumb/bercy-02.jpg'
@@ -42,6 +44,8 @@ import thumbJulesnoel02 from '../assets/images/salles/thumb/julesnoel-02.jpg'
 import thumbRipoche01 from '../assets/images/salles/thumb/ripoche-01.jpg'
 import thumbRipoche02 from '../assets/images/salles/thumb/ripoche-02.jpg'
 import thumbRipoche03 from '../assets/images/salles/thumb/ripoche-03.jpg'
+import thumbReuilly01 from '../assets/images/salles/thumb/reuilly-01.jpg'
+import thumbReuilly02 from '../assets/images/salles/thumb/reuilly-02.jpg'
 
 const DUMAS_IMAGES = [
     { id: 'dumas01', src: picDumas01, thumbnail: thumbDumas01},
@@ -63,7 +67,6 @@ const FLORIMONT_IMAGES = [
     { id: 'florimont02', src: picFlorimont02, thumbnail: thumbFlorimont02},
 ];
 
-
 const JULESNOEL_IMAGES = [
     { id: 'julesnoel01', src: picJulesnoel01, thumbnail: thumbJulesnoel01},
     { id: 'julesnoel02', src: picJulesnoel02, thumbnail: thumbJulesnoel02},
@@ -73,6 +76,11 @@ const RIPOCHE_IMAGES = [
     { id: 'ripoche01', src: picRipoche01, thumbnail: thumbRipoche01},
     { id: 'ripoche02', src: picRipoche02, thumbnail: thumbRipoche02},
     { id: 'ripoche03', src: picRipoche03, thumbnail: thumbRipoche03},
+];
+
+const REUILLY_IMAGES = [
+    { id: 'reuilly01', src: picReuilly01, thumbnail: thumbReuilly01},
+    { id: 'reuilly02', src: picReuilly02, thumbnail: thumbReuilly02},
 ];
 
 class Salles extends React.Component {
@@ -132,13 +140,25 @@ class Salles extends React.Component {
                 }))
             }, {
                 id: 'bercy',
-                name: 'Paris Bercy 12',
+                name: 'Paris Bercy',
                 street: '10 Place Léonard Bernstein',
                 zipCode: '75012',
                 city: 'PARIS',
-                transport: 'Métro : Ligne 6 (arrêt Bercy) - Ligne 14 (arrêt Cour Saint Emilion). La salle se situe sous les grands escaliers qui mènent à la passerelle vers la  BNF, à côté des machines de musculation extérieures',
+                transport: 'Métro : Ligne 6 (arrêt Bercy) - Ligne 14 (arrêt Cours Saint Emilion). La salle se situe sous les grands escaliers qui mènent à la passerelle vers la  BNF, à côté des machines de musculation extérieures',
                 googleMaps: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.126610206226!2d2.3787305635587845!3d48.83672362261667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e672165e5225e1%3A0x92ed9bae0d379c47!2s10+Place+L%C3%A9onard+Bernstein%2C+75012+Paris!5e0!3m2!1sfr!2sfr!4v1505861471128',
                 images: BERCY_IMAGES.map(({id, src, thumbnail}) => ({
+                    src,
+                    thumbnail,
+                }))
+            }, {
+                id: 'reuilly',
+                name: 'Reuilly diderot',
+                street: '43 Allée Vivaldi',
+                zipCode: '75012',
+                city: 'PARIS',
+                transport: 'Ligne 6 Métro Dugommier ou Ligne 8 Métro Montgallet',
+                googleMaps: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.8658238825124!2d2.3865663145800498!3d48.84169797928585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6726cc5d410cd%3A0x33802cac89a6ed60!2s43+All%C3%A9e+Vivaldi%2C+75012+Paris-12E-Arrondissement!5e0!3m2!1sfr!2sfr!4v1532900237396',
+                images: REUILLY_IMAGES.map(({id, src, thumbnail}) => ({
                     src,
                     thumbnail,
                 }))

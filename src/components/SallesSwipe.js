@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import querystring from 'querystring';
 import ReactSwipe from 'react-swipe';
 
 import Gallery from './Gallery'

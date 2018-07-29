@@ -81,6 +81,53 @@ class Planning extends React.Component {
                                 cours des différents moniteurs et monitrices. Pensez à arriver 15min avant le début
                                 de la séance pour vous changer.
                             </p>
+
+                            <div>
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th>Jour</th>
+                                        <th>Horaire</th>
+                                        <th>Salle</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Lundi</td>
+                                        <td>18:30 - 19:30</td>
+                                        <td>Florimont</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lundi</td>
+                                        <td>20:30 - 22:00</td>
+                                        <td>Alexandre Dumas</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mardi</td>
+                                        <td>20:30 - 22:00</td>
+                                        <td>Jules Noël</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jeudi</td>
+                                        <td>19:00 - 20:30</td>
+                                        <td>Ripoche</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vendredi</td>
+                                        <td>19:00 - 20:30</td>
+                                        <td>Ripoche</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Samedi</td>
+                                        <td>10:00 - 12:00</td>
+                                        <td>Bercy</td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot>
+                                    </tfoot>
+                                </table>
+                            </div>
+
                             <p>
                                 <span><img className="image main" src={picHoraires} alt="horaires"/></span>
                             </p>
