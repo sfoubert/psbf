@@ -5,7 +5,7 @@ const Footer = (props) => (
         <section>
             <h2>Contact</h2>
             <dl className="alt">
-                <dt>Phone</dt>
+                <dt>Téléphone</dt>
                 <dd>07 77 86 30 43</dd>
                 <dt>Email</dt>
                 <dd><a href="#">parissavate@gmail.com</a></dd>
