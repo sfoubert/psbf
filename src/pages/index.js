@@ -17,6 +17,8 @@ import picClub03 from '../assets/images/club/assaut-03.jpg'
 import picClub04 from '../assets/images/club/assaut-04.jpg'
 import picClub05 from '../assets/images/club/assaut-05.jpg'
 import picClub06 from '../assets/images/club/assaut-06.jpg'
+import picClub07 from '../assets/images/club/assaut-07.jpg'
+import picClub08 from '../assets/images/club/assaut-08.jpg'
 
 import thumbClub01 from '../assets/images/club/thumb/assaut-01.jpg'
 import thumbClub02 from '../assets/images/club/thumb/assaut-02.jpg'
@@ -24,12 +26,16 @@ import thumbClub03 from '../assets/images/club/thumb/assaut-03.jpg'
 import thumbClub04 from '../assets/images/club/thumb/assaut-04.jpg'
 import thumbClub05 from '../assets/images/club/thumb/assaut-05.jpg'
 import thumbClub06 from '../assets/images/club/thumb/assaut-06.jpg'
+import thumbClub07 from '../assets/images/club/thumb/assaut-07.jpg'
+import thumbClub08 from '../assets/images/club/thumb/assaut-08.jpg'
 
 const DEFAULT_IMAGES = [
     { id: '1', src: picClub01, thumbnail: thumbClub01, caption: 'Challenge IDF', description: 'Compétition régionale à partir de gant rouge'},
-    { id: '6', src: picClub06, thumbnail: thumbClub06, caption: 'Photo de cours', description: 'Des cours durant les vacances scolaires et l\'été'},
-    { id: '5', src: picClub05, thumbnail: thumbClub05, caption: 'Photo de cours', description: 'Du renforcement musculaire, de la préparation physique'},
-    { id: '3', src: picClub03, thumbnail: thumbClub03, caption: 'Photo de cours', description: 'Des assauts libres contrôlés, techniques et sans puissance'},
+    { id: '6', src: picClub06, thumbnail: thumbClub06, caption: 'Cours été', description: 'Des cours durant les vacances scolaires et l\'été'},
+    { id: '5', src: picClub05, thumbnail: thumbClub05, caption: 'Préparation', description: 'Du renforcement musculaire, de la préparation physique'},
+    { id: '3', src: picClub03, thumbnail: thumbClub03, caption: 'Assauts', description: 'Des assauts libres contrôlés, techniques et sans puissance'},
+    { id: '7', src: picClub07, thumbnail: thumbClub07, caption: 'Fractionné au sac', description: 'Du fractionné sur sacs de frappe pour travailler le cardio et la puissance'},
+    { id: '7', src: picClub08, thumbnail: thumbClub08, caption: 'Champion de France Jeune', description: 'Et des victoires !'},
 
 ];
 
