@@ -94,11 +94,6 @@ class Planning extends React.Component {
                                     <tbody>
                                     <tr>
                                         <td>Lundi</td>
-                                        <td>18:15 - 19:30</td>
-                                        <td>Maindron (jusqu'à fin août)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lundi</td>
                                         <td>20:30 - 22:00</td>
                                         <td>Alexandre Dumas</td>
                                     </tr>
@@ -116,7 +111,7 @@ class Planning extends React.Component {
                                     <tr>
                                         <td>Vendredi</td>
                                         <td>19:00 - 20:30</td>
-                                        <td>Reuilly (à partir de septembre)</td>
+                                        <td>Reuilly</td>
                                     </tr>
                                     <tr>
                                         <td>Vendredi</td>

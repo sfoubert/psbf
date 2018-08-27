@@ -102,7 +102,7 @@ class Salles extends React.Component {
                     src,
                     thumbnail,
                 }))
-            }, {
+            },/* {
                 id: 'florimont',
                 name: 'Maindron',
                 street: '6 Rue Hippolyte Maindron',
@@ -114,7 +114,7 @@ class Salles extends React.Component {
                     src,
                     thumbnail,
                 }))
-            }, {
+            },*/ {
                 id: 'julesnoel',
                 name: 'Jules Noël',
                 street: '3 Avenue Maurice d\'Ocagne',
