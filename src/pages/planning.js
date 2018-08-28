@@ -28,144 +28,144 @@ import thumbProf07 from '../assets/images/profs/thumb/seb-01.jpg'
 import thumbProf08 from '../assets/images/profs/thumb/seb-dom-jerome-01.jpg'
 
 const DEFAULT_IMAGES = [
-    { id: '2', src: picProf02, thumbnail: thumbProf02},
-    { id: '3', src: picProf03, thumbnail: thumbProf03},
-    { id: '4', src: picProf04, thumbnail: thumbProf04},
-    { id: '6', src: picProf06, thumbnail: thumbProf06},
-    { id: '7', src: picProf07, thumbnail: thumbProf07},
-    { id: '8', src: picProf08, thumbnail: thumbProf08},
+  {id: '2', src: picProf02, thumbnail: thumbProf02},
+  {id: '3', src: picProf03, thumbnail: thumbProf03},
+  {id: '4', src: picProf04, thumbnail: thumbProf04},
+  {id: '6', src: picProf06, thumbnail: thumbProf06},
+  {id: '7', src: picProf07, thumbnail: thumbProf07},
+  {id: '8', src: picProf08, thumbnail: thumbProf08},
 ];
 
 class Planning extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            stickyNav: false
-        }
+  constructor(props) {
+    super(props);
+    this.state = {
+      stickyNav: false
     }
+  }
 
-    _handleWaypointEnter = () => {
-        this.setState(() => ({stickyNav: false}));
-    };
+  _handleWaypointEnter = () => {
+    this.setState(() => ({stickyNav: false}));
+  };
 
-    _handleWaypointLeave = () => {
-        this.setState(() => ({stickyNav: true}));
-    };
+  _handleWaypointLeave = () => {
+    this.setState(() => ({stickyNav: true}));
+  };
 
-    render() {
+  render() {
 
-        return (
-            <div>
+    return (
+      <div>
 
-                <Helmet title={'Le planning horaire et les moniteurs | ' + get(this, 'props.data.site.siteMetadata.title')}>
-                </Helmet>
+        <Helmet title={'Le planning horaire et les moniteurs | ' + get(this, 'props.data.site.siteMetadata.title')}>
+        </Helmet>
 
-                <Waypoint
-                    onEnter={this._handleWaypointEnter}
-                    onLeave={this._handleWaypointLeave}
-                >
-                </Waypoint>
-                <Nav sticky={this.state.stickyNav}/>
+        <Waypoint
+          onEnter={this._handleWaypointEnter}
+          onLeave={this._handleWaypointLeave}
+        >
+        </Waypoint>
+        <Nav sticky={this.state.stickyNav}/>
 
-                <div id="main">
+        <div id="main">
 
-                    <section id="planning" className="main special">
-                        <span className="image main"><img src={picBandeau} alt="bandeau"/></span>
+          <section id="planning" className="main special">
+            <span className="image main"><img src={picBandeau} alt="bandeau"/></span>
 
-                        <div className="main special">
-                            <header className="major">
-                                <h1>Le planning</h1>
-                            </header>
-                            <p>Plusieurs horaires et salles sur paris sont proposés pour les entraînements tout au
-                                long de la semaine. Chaque adhérent accède à tous les créneaux afin de suivre les
-                                cours des différents moniteurs et monitrices. Pensez à arriver 15min avant le début
-                                de la séance pour vous changer.
-                            </p>
+            <div className="main special">
+              <header className="major">
+                <h1>Le planning</h1>
+              </header>
+              <p>Plusieurs horaires et salles sur paris sont proposés pour les entraînements tout au
+                long de la semaine. Chaque adhérent accède à tous les créneaux afin de suivre les
+                cours des différents moniteurs et monitrices. Pensez à arriver 15min avant le début
+                de la séance pour vous changer.
+              </p>
 
-                            <div>
-                                <table>
-                                    <thead>
-                                    <tr>
-                                        <th>Jour</th>
-                                        <th>Horaire</th>
-                                        <th>Salle</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>Lundi</td>
-                                        <td>20:30 - 22:00</td>
-                                        <td>Alexandre Dumas</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mardi</td>
-                                        <td>20:30 - 22:00</td>
-                                        <td>Jules Noël</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jeudi</td>
-                                        <td>19:00 - 20:30</td>
-                                        <td>Ripoche</td>
-                                    </tr>
+              <div>
+                <table>
+                  <thead>
+                  <tr>
+                    <th>Jour</th>
+                    <th>Horaire</th>
+                    <th>Salle</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>Lundi</td>
+                    <td>20:30 - 22:00</td>
+                    <td>Alexandre Dumas</td>
+                  </tr>
+                  <tr>
+                    <td>Mardi</td>
+                    <td>20:30 - 22:00</td>
+                    <td>Jules Noël</td>
+                  </tr>
+                  <tr>
+                    <td>Jeudi</td>
+                    <td>19:00 - 20:30</td>
+                    <td>Ripoche</td>
+                  </tr>
 
-                                    <tr>
-                                        <td>Vendredi</td>
-                                        <td>19:00 - 20:30</td>
-                                        <td>Reuilly</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Vendredi</td>
-                                        <td>18:45 - 20:15</td>
-                                        <td>Ripoche</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Samedi</td>
-                                        <td>10:00 - 12:00</td>
-                                        <td>Bercy</td>
-                                    </tr>
-                                    </tbody>
-                                    <tfoot>
-                                    </tfoot>
-                                </table>
-                            </div>
+                  <tr>
+                    <td>Vendredi</td>
+                    <td>19:00 - 20:30</td>
+                    <td>Reuilly</td>
+                  </tr>
+                  <tr>
+                    <td>Vendredi</td>
+                    <td>18:45 - 20:15</td>
+                    <td>Ripoche</td>
+                  </tr>
+                  <tr>
+                    <td>Samedi</td>
+                    <td>10:00 - 12:00</td>
+                    <td>Bercy</td>
+                  </tr>
+                  </tbody>
+                  <tfoot>
+                  </tfoot>
+                </table>
+              </div>
 
-                            <p>
-                                <span><img className="image main" src={picHoraires} alt="horaires"/></span>
-                            </p>
-                        </div>
+              <p>
+                <span><img className="image main" src={picHoraires} alt="horaires"/></span>
+              </p>
+            </div>
 
-                    </section>
+          </section>
 
 
-                    <section id="profs" className="main special">
+          <section id="profs" className="main special">
 
-                        <div className="content">
-                            <header className="major">
-                                <h2>Les monitrices et moniteurs</h2>
-                            </header>
+            <div className="content">
+              <header className="major">
+                <h2>Les monitrices et moniteurs</h2>
+              </header>
 
-                            <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail}) => ({
-                                src,
-                                thumbnail,
-                            }))} />
-
-                        </div>
-                        <footer className="major">
-                            <ul className="actions">
-                                <li><Link to="/salles" className="button">Les salles</Link></li>
-                            </ul>
-                        </footer>
-                    </section>
-
-                </div>
+              <Gallery images={DEFAULT_IMAGES.map(({id, src, thumbnail}) => ({
+                src,
+                thumbnail,
+              }))}/>
 
             </div>
-        )
-    }
+            <footer className="major">
+              <ul className="actions">
+                <li><Link to="/salles" className="button">Les salles</Link></li>
+              </ul>
+            </footer>
+          </section>
+
+        </div>
+
+      </div>
+    )
+  }
 }
 
 Planning.propTypes = {
-    route: React.PropTypes.object,
+  route: React.PropTypes.object,
 }
 
 export default Planning

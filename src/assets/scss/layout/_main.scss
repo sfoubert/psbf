@@ -44,6 +44,10 @@
     .btns > button {
       margin: 0.1em;
     }
+
+    .center {
+      text-align: center;
+    }
   }
 
   @include breakpoint(large) {
