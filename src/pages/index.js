@@ -66,13 +66,12 @@ const DEFAULT_IMAGES = [
     description: 'Du fractionné sur sacs de frappe pour travailler le cardio et la puissance'
   },
   {
-    id: '7',
+    id: '8',
     src: picClub08,
     thumbnail: thumbClub08,
     caption: 'Champion de France Jeune',
-    description: 'Et des victoires !'
+    description: 'Des victoires et des titres nationaux'
   },
-
 ];
 
 class Index extends React.Component {
