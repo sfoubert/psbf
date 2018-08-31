@@ -13,7 +13,7 @@ import picProf01 from '../assets/images/profs/dom-01.jpg'
 import picProf02 from '../assets/images/profs/dom-02.jpg'
 import picProf03 from '../assets/images/profs/jeremie-01.jpg'
 import picProf04 from '../assets/images/profs/malika-brahim-01.jpg'
-import picProf05 from '../assets/images/profs/malika-dom-seb-jerome-01.jpg'
+import picProf05 from '../assets/images/profs/antoine-01.jpg'
 import picProf06 from '../assets/images/profs/maria-01.jpg'
 import picProf07 from '../assets/images/profs/seb-01.jpg'
 import picProf08 from '../assets/images/profs/seb-dom-jerome-01.jpg'
@@ -22,18 +22,19 @@ import thumbProf01 from '../assets/images/profs/thumb/dom-01.jpg'
 import thumbProf02 from '../assets/images/profs/thumb/dom-02.jpg'
 import thumbProf03 from '../assets/images/profs/thumb/jeremie-01.jpg'
 import thumbProf04 from '../assets/images/profs/thumb/malika-brahim-01.jpg'
-import thumbProf05 from '../assets/images/profs/thumb/malika-dom-seb-jerome-01.jpg'
+import thumbProf05 from '../assets/images/profs/thumb/antoine-01.jpg'
 import thumbProf06 from '../assets/images/profs/thumb/maria-01.jpg'
 import thumbProf07 from '../assets/images/profs/thumb/seb-01.jpg'
 import thumbProf08 from '../assets/images/profs/thumb/seb-dom-jerome-01.jpg'
 
 const DEFAULT_IMAGES = [
-  {id: '2', src: picProf02, thumbnail: thumbProf02},
-  {id: '3', src: picProf03, thumbnail: thumbProf03},
-  {id: '4', src: picProf04, thumbnail: thumbProf04},
-  {id: '6', src: picProf06, thumbnail: thumbProf06},
-  {id: '7', src: picProf07, thumbnail: thumbProf07},
-  {id: '8', src: picProf08, thumbnail: thumbProf08},
+    {id: '2', src: picProf02, thumbnail: thumbProf02},
+    {id: '3', src: picProf03, thumbnail: thumbProf03},
+    {id: '4', src: picProf04, thumbnail: thumbProf04},
+    {id: '6', src: picProf06, thumbnail: thumbProf06},
+    {id: '7', src: picProf07, thumbnail: thumbProf07},
+    {id: '5', src: picProf05, thumbnail: thumbProf05},
+    {id: '8', src: picProf08, thumbnail: thumbProf08},
 ];
 
 class Planning extends React.Component {
