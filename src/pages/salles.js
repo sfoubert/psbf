@@ -93,7 +93,7 @@ class Salles extends React.Component {
     this.salles = [
       {
         id: 'dumas',
-        name: 'My Fitness Studio',
+        name: 'Alexandre Dumas',
         street: '91 Rue Alexandre Dumas',
         zipCode: '75020',
         city: 'PARIS',
