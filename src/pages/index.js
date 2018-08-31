@@ -30,106 +30,141 @@ import thumbClub07 from '../assets/images/club/thumb/assaut-07.jpg'
 import thumbClub08 from '../assets/images/club/thumb/assaut-08.jpg'
 
 const DEFAULT_IMAGES = [
-    { id: '1', src: picClub01, thumbnail: thumbClub01, caption: 'Challenge IDF', description: 'Compétition régionale à partir de gant rouge'},
-    { id: '6', src: picClub06, thumbnail: thumbClub06, caption: 'Cours été', description: 'Des cours durant les vacances scolaires et l\'été'},
-    { id: '5', src: picClub05, thumbnail: thumbClub05, caption: 'Préparation', description: 'Du renforcement musculaire, de la préparation physique'},
-    { id: '3', src: picClub03, thumbnail: thumbClub03, caption: 'Assauts', description: 'Des assauts libres contrôlés, techniques et sans puissance'},
-    { id: '7', src: picClub07, thumbnail: thumbClub07, caption: 'Fractionné au sac', description: 'Du fractionné sur sacs de frappe pour travailler le cardio et la puissance'},
-    { id: '7', src: picClub08, thumbnail: thumbClub08, caption: 'Champion de France Jeune', description: 'Et des victoires !'},
-
+  {
+    id: '1',
+    src: picClub01,
+    thumbnail: thumbClub01,
+    caption: 'Challenge IDF',
+    description: 'Compétition régionale à partir de gant rouge'
+  },
+  {
+    id: '6',
+    src: picClub06,
+    thumbnail: thumbClub06,
+    caption: 'Cours été',
+    description: 'Des cours durant les vacances scolaires et l\'été'
+  },
+  {
+    id: '5',
+    src: picClub05,
+    thumbnail: thumbClub05,
+    caption: 'Préparation',
+    description: 'Du renforcement musculaire, de la préparation physique'
+  },
+  {
+    id: '3',
+    src: picClub03,
+    thumbnail: thumbClub03,
+    caption: 'Assauts',
+    description: 'Des assauts libres contrôlés, techniques et sans puissance'
+  },
+  {
+    id: '7',
+    src: picClub07,
+    thumbnail: thumbClub07,
+    caption: 'Fractionné au sac',
+    description: 'Du fractionné sur sacs de frappe pour travailler le cardio et la puissance'
+  },
+  {
+    id: '8',
+    src: picClub08,
+    thumbnail: thumbClub08,
+    caption: 'Champion de France Jeune',
+    description: 'Des victoires et des titres nationaux'
+  },
 ];
 
 class Index extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            stickyNav: false
-        }
+  constructor(props) {
+    super(props);
+    this.state = {
+      stickyNav: false
     }
+  }
 
-    _handleWaypointEnter = () => {
-        this.setState(() => ({stickyNav: false}));
-    };
+  _handleWaypointEnter = () => {
+    this.setState(() => ({stickyNav: false}));
+  };
 
-    _handleWaypointLeave = () => {
-        this.setState(() => ({stickyNav: true}));
-    };
+  _handleWaypointLeave = () => {
+    this.setState(() => ({stickyNav: true}));
+  };
 
-    render() {
-        const posts = get(this, 'props.data.allMarkdownRemark.edges');
+  render() {
+    const posts = get(this, 'props.data.allMarkdownRemark.edges');
 
-        return (
-            <div>
-                <Header />
+    return (
+      <div>
+        <Header/>
 
-                <Helmet
-                    title={get(this, 'props.data.site.siteMetadata.title') + ' | Présentation du club et actualités'}>
-                </Helmet>
+        <Helmet
+          title={get(this, 'props.data.site.siteMetadata.title') + ' | Présentation du club et actualités'}>
+        </Helmet>
 
-                <Waypoint
-                    onEnter={this._handleWaypointEnter}
-                    onLeave={this._handleWaypointLeave}
-                >
-                </Waypoint>
-                <Nav sticky={this.state.stickyNav}/>
+        <Waypoint
+          onEnter={this._handleWaypointEnter}
+          onLeave={this._handleWaypointLeave}
+        >
+        </Waypoint>
+        <Nav sticky={this.state.stickyNav}/>
 
-                <div id="main">
+        <div id="main">
 
-                    <section id="club" className="main special">
+          <section id="club" className="main special">
 
-                        <span className="image main"><img src={picBandeau} alt="bandeau"/></span>
+            <span className="image main"><img src={picBandeau} alt="bandeau"/></span>
 
-                        <header className="major">
-                            <h1>Le club</h1>
-                            <p>
-                                La rentrée sportive de notre section Boxe Française aura lieu le
-                                &nbsp;<strong>lundi 3 septembre 2018</strong>. <br/>
-                                Consultez la <Link to="/faq-2018-2019">FAQ</Link> pour plus d'informations.
-                            </p>
-                            <p>
-                                PSBF est un club parisien composé d'enseignants expérimentés et passionnés.
-                                Les cours sont tout niveaux, et ouverts aussi bien aux loisirs et aux compétiteurs.
-                            </p>
-                            <p>
-                                Retrouvez sur ce site la présentation du club, les horaires et les adresses des différentes
-                                salles sur Paris. L'inscription annuelle, permet d'accèder à l'ensemble des créneaux et
-                                salles proposées sur Paris.
-                            </p>
-                            <p>
-                                Les couleurs du club sont le Bleu et Rouge.
-                            </p>
-                        </header>
+            <header className="major">
+              <h1>Le club</h1>
+              <p>
+                La rentrée sportive de notre section Boxe Française débute le
+                &nbsp;<strong>lundi 3 septembre 2018</strong>. <br/>
+                Consultez la <Link to="/faq-2018-2019">FAQ</Link> pour plus d'informations.
+              </p>
+              <p>
+                PSBF est un club parisien composé d'enseignants expérimentés et passionnés.
+                Les cours sont tout niveaux, et ouverts aussi bien aux loisirs et aux compétiteurs.
+              </p>
+              <p>
+                Retrouvez sur ce site la présentation du club, les horaires et les adresses des différentes
+                salles sur Paris. L'inscription annuelle, permet d'accèder à l'ensemble des créneaux et
+                salles proposées sur Paris.
+              </p>
+              <p>
+                Les couleurs du club sont le Bleu et Rouge.
+              </p>
+            </header>
 
-                        <Gallery images={DEFAULT_IMAGES.map(({ id, src, thumbnail, caption, description }) => ({
-                            src,
-                            thumbnail,
-                            caption,
-                            description
-                        }))} />
+            <Gallery images={DEFAULT_IMAGES.map(({id, src, thumbnail, caption, description}) => ({
+              src,
+              thumbnail,
+              caption,
+              description
+            }))}/>
 
-                    </section>
+          </section>
 
-                    <section id="actualites" className="main special">
+          <section id="actualites" className="main special">
 
-                        <h2>Actualités</h2>
-                        <BlogPosts posts={posts}/>
+            <h2>Actualités</h2>
+            <BlogPosts posts={posts}/>
 
-                        <footer className="major">
-                            <ul className="actions">
-                                <li><Link to="/savate" className="button">La savate</Link></li>
-                            </ul>
-                        </footer>
-                    </section>
+            <footer className="major">
+              <ul className="actions">
+                <li><Link to="/savate" className="button">La savate</Link></li>
+              </ul>
+            </footer>
+          </section>
 
-                </div>
+        </div>
 
-            </div>
-        )
-    }
+      </div>
+    )
+  }
 }
 
 Index.propTypes = {
-    route: React.PropTypes.object,
+  route: React.PropTypes.object,
 };
 
 export default Index
