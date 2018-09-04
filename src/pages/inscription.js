@@ -49,7 +49,7 @@ class Inscription extends React.Component {
               <p>
                 Vous êtes les bienvenus pour participer à un cours d’essai, il suffit de vous présenter
                 avec une tenue de sport à l’un des cours hebdomadaires. Venez avec une tenue de sport et
-                des baskets propres, nous prêtons les gants ! Pour cela un simple sms au 07 77 68 30 43
+                des baskets propres, nous prêtons les gants ! Pour cela un simple sms au 07 77 86 30 43
                 pour confirmer votre présence suffit.
               </p>
 
