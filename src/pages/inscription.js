@@ -1,11 +1,12 @@
-import React from 'react'
-import Waypoint from 'react-waypoint'
-import Helmet from 'react-helmet'
-import get from 'lodash/get'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Waypoint from 'react-waypoint';
+import Helmet from 'react-helmet';
+import get from 'lodash/get';
 
-import Nav from '../components/Nav'
+import Nav from '../components/Nav';
 
-import picBandeau from '../assets/images/salles/ripoche-01.jpg'
+import picBandeau from '../assets/images/salles/ripoche-01.jpg';
 
 class Inscription extends React.Component {
   constructor(props) {
@@ -54,7 +55,7 @@ class Inscription extends React.Component {
               </p>
 
               <p>
-                L'inscription vous donne accès à l'intégralité de nos cours qui sont dispensés dans nos
+                L&apos;inscription vous donne accès à l&apos;intégralité de nos cours qui sont dispensés dans nos
                 différentes salles parisiennes ( 12ème / 14ème / 20ème ).
               </p>
 
@@ -62,7 +63,7 @@ class Inscription extends React.Component {
             <footer className="major">
               <ul className="actions">
                 <li><a href="https://www.e-cotiz.com/app/site/7839"
-                       target="_blank" className="button special">Inscription en ligne</a></li>
+                       target="_blank" rel="noopener noreferrer" className="button special">Inscription en ligne</a></li>
               </ul>
             </footer>
           </section>
@@ -75,7 +76,7 @@ class Inscription extends React.Component {
 }
 
 Inscription.propTypes = {
-  route: React.PropTypes.object,
+  route: PropTypes.object,
 };
 
 export default Inscription

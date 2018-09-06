@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class ScrollBar extends React.Component {
-  render() {
-    const {width, height} = this.props;
-    return (
+class ScrollBar extends React.Component {
+  render() {
+    const {width, height} = this.props;
+    return (
       <div className="scrollbar"
            style={{
-             border: 'solid 1px lightgray',
+             border: 'solid 1px lightgray',
              height,
-             backgroundColor: "#f90c00"
+             backgroundColor: "#f90c00"
            }}
       >
         <div
@@ -17,12 +17,13 @@ class ScrollBar extends React.Component {
           id="hoge" style={{
           width: `${width}%`,
           height,
-          backgroundColor: "#05409a"
-        }} />
+          backgroundColor: "#05409a"
+        }}/>
       </div>
     );
   }
 }
+
 ScrollBar.propTypes = {
   width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired

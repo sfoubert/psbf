@@ -1,33 +1,34 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import Waypoint from 'react-waypoint'
-import Helmet from 'react-helmet'
-import get from 'lodash/get'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
+import Waypoint from 'react-waypoint';
+import Helmet from 'react-helmet';
+import get from 'lodash/get';
 
-import Header from '../components/Header'
-import Nav from '../components/Nav'
+import Header from '../components/Header';
+import Nav from '../components/Nav';
 import Gallery from "../components/Gallery";
-import BlogPosts from '../components/BlogPosts'
+import BlogPosts from '../components/BlogPosts';
 
-import picBandeau from '../assets/images/bercy-01.jpg'
+import picBandeau from '../assets/images/bercy-01.jpg';
 
-import picClub01 from '../assets/images/club/assaut-01.jpg'
-import picClub02 from '../assets/images/club/assaut-02.jpg'
-import picClub03 from '../assets/images/club/assaut-03.jpg'
-import picClub04 from '../assets/images/club/assaut-04.jpg'
-import picClub05 from '../assets/images/club/assaut-05.jpg'
-import picClub06 from '../assets/images/club/assaut-06.jpg'
-import picClub07 from '../assets/images/club/assaut-07.jpg'
-import picClub08 from '../assets/images/club/assaut-08.jpg'
+import picClub01 from '../assets/images/club/assaut-01.jpg';
+import picClub02 from '../assets/images/club/assaut-02.jpg';
+import picClub03 from '../assets/images/club/assaut-03.jpg';
+import picClub04 from '../assets/images/club/assaut-04.jpg';
+import picClub05 from '../assets/images/club/assaut-05.jpg';
+import picClub06 from '../assets/images/club/assaut-06.jpg';
+import picClub07 from '../assets/images/club/assaut-07.jpg';
+import picClub08 from '../assets/images/club/assaut-08.jpg';
 
-import thumbClub01 from '../assets/images/club/thumb/assaut-01.jpg'
-import thumbClub02 from '../assets/images/club/thumb/assaut-02.jpg'
-import thumbClub03 from '../assets/images/club/thumb/assaut-03.jpg'
-import thumbClub04 from '../assets/images/club/thumb/assaut-04.jpg'
-import thumbClub05 from '../assets/images/club/thumb/assaut-05.jpg'
-import thumbClub06 from '../assets/images/club/thumb/assaut-06.jpg'
-import thumbClub07 from '../assets/images/club/thumb/assaut-07.jpg'
-import thumbClub08 from '../assets/images/club/thumb/assaut-08.jpg'
+import thumbClub01 from '../assets/images/club/thumb/assaut-01.jpg';
+import thumbClub02 from '../assets/images/club/thumb/assaut-02.jpg';
+import thumbClub03 from '../assets/images/club/thumb/assaut-03.jpg';
+import thumbClub04 from '../assets/images/club/thumb/assaut-04.jpg';
+import thumbClub05 from '../assets/images/club/thumb/assaut-05.jpg';
+import thumbClub06 from '../assets/images/club/thumb/assaut-06.jpg';
+import thumbClub07 from '../assets/images/club/thumb/assaut-07.jpg';
+import thumbClub08 from '../assets/images/club/thumb/assaut-08.jpg';
 
 const DEFAULT_IMAGES = [
   {
@@ -119,15 +120,15 @@ class Index extends React.Component {
               <p>
                 La rentrée sportive de notre section Boxe Française débute le
                 &nbsp;<strong>lundi 3 septembre 2018</strong>. <br/>
-                Consultez la <Link to="/faq-2018-2019">FAQ</Link> pour plus d'informations.
+                Consultez la <Link to="/faq-2018-2019">FAQ</Link> pour plus d&apos;informations.
               </p>
               <p>
-                PSBF est un club parisien composé d'enseignants expérimentés et passionnés.
+                PSBF est un club parisien composé d&apos;enseignants expérimentés et passionnés.
                 Les cours sont tout niveaux, et ouverts aussi bien aux loisirs et aux compétiteurs.
               </p>
               <p>
                 Retrouvez sur ce site la présentation du club, les horaires et les adresses des différentes
-                salles sur Paris. L'inscription annuelle, permet d'accèder à l'ensemble des créneaux et
+                salles sur Paris. L&apos;inscription annuelle, permet d&apos;accèder à l&apos;ensemble des créneaux et
                 salles proposées sur Paris.
               </p>
               <p>
@@ -164,7 +165,7 @@ class Index extends React.Component {
 }
 
 Index.propTypes = {
-  route: React.PropTypes.object,
+  route: PropTypes.object,
 };
 
 export default Index

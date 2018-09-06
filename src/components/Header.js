@@ -7,7 +7,7 @@ import picLogo from '../assets/images/logo.svg'
 import picFavIcon from '../assets/images/favicon.ico'
 import picLogoBlack from '../assets/images/logo-black.svg'
 
-const Header = (props) => (
+const Header = () => (
     <div>
         <Helmet>
             <meta name="description" content="PSBF Paris Savate Boxe Française est un club de Savate Boxe Française sur Paris. Les cours sont tout niveaux, et ouverts aussi bien aux loisirs et aux compétiteurs. La rentrée sportive de notre section Boxe Française commence début septembre 2018."/>

@@ -1,4 +1,6 @@
 # PSBF
+[![Build Status](https://travis-ci.org/sfoubert/psbf.svg?branch=develop)](https://travis-ci.org/sfoubert/psbf)
+
 French boxing club in Paris
 
 [www.parissavate.fr](www.parissavate.fr)

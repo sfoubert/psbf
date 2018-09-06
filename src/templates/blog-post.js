@@ -1,8 +1,9 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
-import get from 'lodash/get'
-import Waypoint from 'react-waypoint'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import Link from 'gatsby-link';
+import get from 'lodash/get';
+import Waypoint from 'react-waypoint';
 
 import Nav from '../components/Nav'
 
@@ -109,6 +110,11 @@ class BlogPostTemplate extends React.Component {
     )
   }
 }
+
+BlogPostTemplate.propTypes = {
+  data: PropTypes.object,
+  pathContext: PropTypes.object,
+};
 
 export default BlogPostTemplate
 
