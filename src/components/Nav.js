@@ -36,7 +36,7 @@ const Nav = (props) => (
 );
 
 Nav.propTypes = {
-  sticky: PropTypes.boolean.isRequired
+  sticky: PropTypes.bool.isRequired
 };
 
 export default Nav
