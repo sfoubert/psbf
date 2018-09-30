@@ -1,31 +1,32 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import Waypoint from 'react-waypoint'
-import Helmet from 'react-helmet'
-import get from 'lodash/get'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
+import Waypoint from 'react-waypoint';
+import Helmet from 'react-helmet';
+import get from 'lodash/get';
 
-import Nav from '../components/Nav'
+import Nav from '../components/Nav';
 import Gallery from "../components/Gallery";
 
-import picBandeau from '../assets/images/bercy-01.jpg'
-import picHoraires from '../assets/images/planning/horaires.png'
-import picProf01 from '../assets/images/profs/dom-01.jpg'
-import picProf02 from '../assets/images/profs/dom-02.jpg'
-import picProf03 from '../assets/images/profs/jeremie-01.jpg'
-import picProf04 from '../assets/images/profs/malika-brahim-01.jpg'
-import picProf05 from '../assets/images/profs/antoine-01.jpg'
-import picProf06 from '../assets/images/profs/maria-01.jpg'
-import picProf07 from '../assets/images/profs/seb-01.jpg'
-import picProf08 from '../assets/images/profs/seb-dom-jerome-01.jpg'
+import picBandeau from '../assets/images/bercy-01.jpg';
+import picHoraires from '../assets/images/planning/horaires.png';
+import picProf01 from '../assets/images/profs/dom-01.jpg';
+import picProf02 from '../assets/images/profs/dom-02.jpg';
+import picProf03 from '../assets/images/profs/jeremie-01.jpg';
+import picProf04 from '../assets/images/profs/malika-brahim-01.jpg';
+import picProf05 from '../assets/images/profs/antoine-01.jpg';
+import picProf06 from '../assets/images/profs/maria-01.jpg';
+import picProf07 from '../assets/images/profs/seb-01.jpg';
+import picProf08 from '../assets/images/profs/seb-dom-jerome-01.jpg';
 
-import thumbProf01 from '../assets/images/profs/thumb/dom-01.jpg'
-import thumbProf02 from '../assets/images/profs/thumb/dom-02.jpg'
-import thumbProf03 from '../assets/images/profs/thumb/jeremie-01.jpg'
-import thumbProf04 from '../assets/images/profs/thumb/malika-brahim-01.jpg'
-import thumbProf05 from '../assets/images/profs/thumb/antoine-01.jpg'
-import thumbProf06 from '../assets/images/profs/thumb/maria-01.jpg'
-import thumbProf07 from '../assets/images/profs/thumb/seb-01.jpg'
-import thumbProf08 from '../assets/images/profs/thumb/seb-dom-jerome-01.jpg'
+import thumbProf01 from '../assets/images/profs/thumb/dom-01.jpg';
+import thumbProf02 from '../assets/images/profs/thumb/dom-02.jpg';
+import thumbProf03 from '../assets/images/profs/thumb/jeremie-01.jpg';
+import thumbProf04 from '../assets/images/profs/thumb/malika-brahim-01.jpg';
+import thumbProf05 from '../assets/images/profs/thumb/antoine-01.jpg';
+import thumbProf06 from '../assets/images/profs/thumb/maria-01.jpg';
+import thumbProf07 from '../assets/images/profs/thumb/seb-01.jpg';
+import thumbProf08 from '../assets/images/profs/thumb/seb-dom-jerome-01.jpg';
 
 const DEFAULT_IMAGES = [
     {id: '2', src: picProf02, thumbnail: thumbProf02},
@@ -100,7 +101,7 @@ class Planning extends React.Component {
                   </tr>
                   <tr>
                     <td>Mardi</td>
-                    <td>20:30 - 22:00</td>
+                    <td>20:45 - 22:00</td>
                     <td>Jules Noël</td>
                   </tr>
                   <tr>
@@ -166,7 +167,7 @@ class Planning extends React.Component {
 }
 
 Planning.propTypes = {
-  route: React.PropTypes.object,
+  route: PropTypes.object,
 }
 
 export default Planning
