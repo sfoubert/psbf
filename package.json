@@ -5,8 +5,10 @@
   "author": "Sébastien Foubert",
   "dependencies": {
     "gatsby": "^1.9.235",
+    "gatsby-cli": "^2.4.5",
     "gatsby-image": "^1.0.42",
     "gatsby-link": "^1.6.39",
+    "gatsby-plugin-eslint": "^1.0.3",
     "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-purify-css": "^2.2.1",
     "gatsby-plugin-react-helmet": "^1.0.8",
@@ -39,10 +41,16 @@
   },
   "scripts": {
     "dev": "gatsby develop",
-    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "gatsby develop",
-    "build": "gatsby build",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+    "build": "gatsby build"
+  },
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "eslint": "^5.5.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-react": "^7.11.1"
   }
 }

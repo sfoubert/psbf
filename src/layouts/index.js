@@ -1,8 +1,9 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import '../assets/scss/main.scss'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import Footer from '../components/Footer'
+import '../assets/scss/main.scss';
+
+import Footer from '../components/Footer';
 import ManageScrollBar from "../components/ScrollBar";
 
 class Template extends React.Component {
@@ -42,7 +43,7 @@ class Template extends React.Component {
 }
 
 Template.propTypes = {
-  children: React.PropTypes.func
+  children: PropTypes.func
 };
 
 export default Template

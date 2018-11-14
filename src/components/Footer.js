@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Footer = (props) => (
+const Footer = () => (
     <footer id="footer">
         <section>
             <h2>Contact</h2>

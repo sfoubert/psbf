@@ -1,29 +1,30 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import Waypoint from 'react-waypoint'
-import Helmet from 'react-helmet'
-import get from 'lodash/get'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
+import Waypoint from 'react-waypoint';
+import Helmet from 'react-helmet';
+import get from 'lodash/get';
 
-import Nav from '../components/Nav'
+import Nav from '../components/Nav';
 import Gallery from "../components/Gallery";
 
-import picBandeau from '../assets/images/salles/ripoche-01.jpg'
+import picBandeau from '../assets/images/salles/ripoche-01.jpg';
 
-import picSavate01 from '../assets/images/savate/assaut-01.jpg'
-import picSavate02 from '../assets/images/savate/assaut-02.jpg'
-import picSavate03 from '../assets/images/savate/assaut-03.jpg'
-import picSavate04 from '../assets/images/savate/assaut-04.jpg'
-import picSavate05 from '../assets/images/savate/assaut-05.jpg'
-import picCharlemont from '../assets/images/savate/charlemont.jpg'
-import picEquipements01 from '../assets/images/savate/equipements/chaussure.jpg'
-import picEquipements02 from '../assets/images/savate/equipements/gant.jpg'
+import picSavate01 from '../assets/images/savate/assaut-01.jpg';
+import picSavate02 from '../assets/images/savate/assaut-02.jpg';
+import picSavate03 from '../assets/images/savate/assaut-03.jpg';
+import picSavate04 from '../assets/images/savate/assaut-04.jpg';
+import picSavate05 from '../assets/images/savate/assaut-05.jpg';
+import picCharlemont from '../assets/images/savate/charlemont.jpg';
+import picEquipements01 from '../assets/images/savate/equipements/chaussure.jpg';
+import picEquipements02 from '../assets/images/savate/equipements/gant.jpg';
 
-import picGantBleu from '../assets/images/grades/gant_bleu.jpg'
-import picGantVert from '../assets/images/grades/gant_vert.jpg'
-import picGantRouge from '../assets/images/grades/gant_rouge.jpg'
-import picGantBlanc from '../assets/images/grades/gant_blanc.jpg'
-import picGantJaune from '../assets/images/grades/gant_jaune.jpg'
-import picGantArgent from '../assets/images/grades/gant_argent.jpg'
+import picGantBleu from '../assets/images/grades/gant_bleu.jpg';
+import picGantVert from '../assets/images/grades/gant_vert.jpg';
+import picGantRouge from '../assets/images/grades/gant_rouge.jpg';
+import picGantBlanc from '../assets/images/grades/gant_blanc.jpg';
+import picGantJaune from '../assets/images/grades/gant_jaune.jpg';
+import picGantArgent from '../assets/images/grades/gant_argent.jpg';
 
 const DEFAULT_IMAGES = [
   {id: '1', src: picSavate01, thumbnail: picSavate01},
@@ -181,7 +182,7 @@ class Savate extends React.Component {
             </header>
             <p>
               Plusieurs sessions de passages de grades ont lieu durant la saison sportive, afin
-              d'evaluer les acquis et définir de nouveaux objectifs
+              d&apos;evaluer les acquis et définir de nouveaux objectifs
             </p>
             <ul className="features">
               <li>
@@ -234,7 +235,7 @@ class Savate extends React.Component {
                 <span className="image main"><a href="grades/gat_1.pdf" target="_blank">
                   <img src={picGantArgent} alt="gant d'argent technique"/></a>
                 </span>
-                <h3>Gant d'argent</h3>
+                <h3>Gant d&apos;argent</h3>
                 <p>Niveau expert</p>
               </li>
             </ul>
@@ -314,7 +315,7 @@ class Savate extends React.Component {
 }
 
 Savate.propTypes = {
-  route: React.PropTypes.object,
+  route: PropTypes.object,
 };
 
 export default Savate
