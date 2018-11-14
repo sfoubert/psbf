@@ -7,6 +7,7 @@ import get from 'lodash/get';
 import Nav from '../components/Nav';
 
 import picBandeau from '../assets/images/salles/ripoche-01.jpg';
+import picSponsor01 from '../assets/images/sponsors/bet-capet.png';
 
 class Inscription extends React.Component {
   constructor(props) {
@@ -63,9 +64,29 @@ class Inscription extends React.Component {
             <footer className="major">
               <ul className="actions">
                 <li><a href="https://www.e-cotiz.com/app/site/7839"
-                       target="_blank" rel="noopener noreferrer" className="button special">Inscription en ligne</a></li>
+                       target="_blank" rel="noopener noreferrer" className="button special">&gt;&gt; Inscription en ligne &lt;&lt;</a></li>
               </ul>
             </footer>
+          </section>
+
+          <section id="sponsors" className="main special">
+              <h2>Sponsors</h2>
+
+            <p>
+              L&apos;équipe PSBF remercie ses partenaires et sponsors qui nous apportent leur engagement et leur soutien.
+              Si vous souhaitez vous nous soutenir, n’hésitez pas à nous écrire pour recevoir notre dossier de sponsoring.
+            </p>
+
+            <ul className="features">
+              <li>
+                <span>
+                  <a href="http://www.bet-capet.com/" target="_blank" rel="noopener noreferrer">
+                    <img className="image main" src={picSponsor01} alt="BET Ingenierie"/>
+                  </a>
+                </span>
+              </li>
+            </ul>
+
           </section>
 
         </div>
