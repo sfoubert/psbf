@@ -10,7 +10,7 @@ import Nav from '../components/Nav';
 import Gallery from "../components/Gallery";
 import BlogPosts from '../components/BlogPosts';
 
-import picBandeau from '../assets/images/bercy-01.jpg';
+import picBandeau from '../assets/images/club/bandeau.jpg';
 
 import picClub01 from '../assets/images/club/assaut-01.jpg';
 import picClub02 from '../assets/images/club/assaut-02.jpg';

@@ -6,7 +6,7 @@ import get from 'lodash/get';
 
 import Nav from '../components/Nav';
 
-import picBandeau from '../assets/images/salles/ripoche-01.jpg';
+import picBandeau from '../assets/images/inscription/bandeau.jpg';
 import picSponsor01 from '../assets/images/sponsors/bet-capet.png';
 
 class Inscription extends React.Component {
