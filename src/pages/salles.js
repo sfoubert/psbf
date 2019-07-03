@@ -90,7 +90,7 @@ class Salles extends React.Component {
     this.state = {
       stickyNav: false
     };
-    this.salles = [
+    this.salles = [/*
       {
         id: 'dumas',
         name: 'Alexandre Dumas',
@@ -103,7 +103,7 @@ class Salles extends React.Component {
           src,
           thumbnail,
         }))
-      }, /* {
+      },  {
                 id: 'florimont',
                 name: 'Maindron',
                 street: '6 Rue Hippolyte Maindron',
