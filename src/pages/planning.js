@@ -84,6 +84,10 @@ class Planning extends React.Component {
                 de la séance pour vous changer.
               </p>
 
+              <p>
+                <span><img className="image main" src={picHoraires} alt="horaires"/></span>
+              </p>
+
               <div>
                 <table>
                   <thead>
@@ -91,38 +95,57 @@ class Planning extends React.Component {
                     <th>Jour</th>
                     <th>Horaire</th>
                     <th>Salle</th>
+                    <th>Description</th>
                   </tr>
                   </thead>
                   <tbody>
                   <tr>
                     <td>Lundi</td>
-                    <td>19:00 - 21:30</td>
+                    <td>19:30 - 21:30</td>
                     <td>Bercy</td>
+                    <td>Savate tout niveau</td>
                   </tr>
                   <tr>
                     <td>Mardi</td>
-                    <td>20:45 - 22:00</td>
+                    <td>20:30 - 22:00</td>
                     <td>Jules Noël</td>
+                    <td>Savate tout niveau</td>
                   </tr>
                   <tr>
                     <td>Mercredi</td>
-                    <td>19:00 - 21:30</td>
+                    <td>19:00 - 20:00</td>
                     <td>Bercy</td>
+                    <td>Savate compétiteurs</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>20:00 - 21:30</td>
+                    <td>Bercy</td>
+                    <td>Savate tout niveau</td>
                   </tr>
                   <tr>
                     <td>Jeudi</td>
-                    <td>18:30 - 20:30</td>
+                    <td>18:30 - 19:00</td>
                     <td>Ripoche</td>
+                    <td>Préparation physique</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>19:00 - 20:30</td>
+                    <td>Ripoche</td>
+                    <td>Savate tout niveau</td>
                   </tr>
                   <tr>
                     <td>Vendredi</td>
-                    <td>19:00 - 21:30</td>
-                    <td>Ladoumègue</td>
+                    <td>19:00 - 20:30</td>
+                    <td>Reuilly</td>
+                    <td>Savate tout niveau</td>
                   </tr>
                   <tr>
                     <td>Samedi</td>
                     <td>10:00 - 12:00</td>
                     <td>Bercy</td>
+                    <td>Savate tout niveau</td>
                   </tr>
                   </tbody>
                   <tfoot>
@@ -130,9 +153,6 @@ class Planning extends React.Component {
                 </table>
               </div>
 
-              <p>
-                <span><img className="image main" src={picHoraires} alt="horaires"/></span>
-              </p>
             </div>
 
           </section>
