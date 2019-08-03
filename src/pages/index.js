@@ -119,7 +119,7 @@ class Index extends React.Component {
               <h1>Le club</h1>
               <p>
                 La rentrée sportive de notre section Boxe Française débute le
-                &nbsp;<strong>lundi 3 septembre 2018</strong>. <br/>
+                &nbsp;<strong>lundi 2 septembre 2019</strong>. <br/>
                 Consultez la <Link to="/faq-2018-2019">FAQ</Link> pour plus d&apos;informations.
               </p>
               <p>
