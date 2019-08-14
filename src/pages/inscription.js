@@ -62,7 +62,7 @@ class Inscription extends React.Component {
             </header>
             <footer className="major">
               <ul className="actions">
-                <li><a href="https://www.e-cotiz.com/app/site/7839"
+                <li><a href="https://www.e-cotiz.com/app/site/10996"
                        target="_blank" rel="noopener noreferrer" className="button special">&gt;&gt; Inscription en ligne &lt;&lt;</a></li>
               </ul>
             </footer>
