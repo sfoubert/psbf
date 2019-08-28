@@ -10,7 +10,7 @@ Voici une liste de questions-réponses que vous pourriez vous poser avant de fra
 > La première séance commence dès le Lundi 3 septembre 2018.
 
 ## Puis-je faire une séance d’essai ?
-> Vous pouvez faire jusqu’à une séance d’essai en envoyant un sms au 0645474864 avec votre prénom et la salle et l’horaire du cours de votre choix
+> Vous pouvez faire jusqu’à une séance d’essai en envoyant un sms au 07 77 86 30 43 avec votre prénom et la salle et l’horaire du cours de votre choix
 
 ## A partir de quel âge, je peux pratiquer ?
 > A partir de 16 ans et faire plus de 45 kg.
