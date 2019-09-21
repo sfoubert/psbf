@@ -7,12 +7,14 @@ import get from 'lodash/get'
 import Nav from '../components/Nav'
 import SallesSwipe from '../components/SallesSwipe'
 
-import picBandeau from '../assets/images/salles/ripoche-01.jpg'
+import picBandeau from '../assets/images/bercy-01.jpg';
 
 import picSalles from '../assets/images/salles/salles.png'
 
 import picBercy01 from '../assets/images/salles/bercy-01.jpg'
 import picBercy02 from '../assets/images/salles/bercy-02.jpg'
+import picBercy03 from '../assets/images/salles/bercy-03.jpg'
+import picBercy04 from '../assets/images/salles/bercy-04.jpg'
 import picJulesnoel01 from '../assets/images/salles/julesnoel-01.jpg'
 import picJulesnoel02 from '../assets/images/salles/julesnoel-02.jpg'
 import picRipoche01 from '../assets/images/salles/ripoche-01.jpg'
@@ -23,6 +25,8 @@ import picReuilly02 from '../assets/images/salles/reuilly-02.jpg'
 
 import thumbBercy01 from '../assets/images/salles/thumb/bercy-01.jpg'
 import thumbBercy02 from '../assets/images/salles/thumb/bercy-02.jpg'
+import thumbBercy03 from '../assets/images/salles/thumb/bercy-03.jpg'
+import thumbBercy04 from '../assets/images/salles/thumb/bercy-04.jpg'
 import thumbJulesnoel01 from '../assets/images/salles/thumb/julesnoel-01.jpg'
 import thumbJulesnoel02 from '../assets/images/salles/thumb/julesnoel-02.jpg'
 import thumbRipoche01 from '../assets/images/salles/thumb/ripoche-01.jpg'
@@ -34,6 +38,8 @@ import thumbReuilly02 from '../assets/images/salles/thumb/reuilly-02.jpg'
 const BERCY_IMAGES = [
   {id: 'bercy01', src: picBercy01, thumbnail: thumbBercy01},
   {id: 'bercy02', src: picBercy02, thumbnail: thumbBercy02},
+  {id: 'bercy03', src: picBercy03, thumbnail: thumbBercy03},
+  {id: 'bercy04', src: picBercy04, thumbnail: thumbBercy04},
 ];
 
 const JULESNOEL_IMAGES = [
