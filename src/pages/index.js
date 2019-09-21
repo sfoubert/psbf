@@ -120,7 +120,7 @@ class Index extends React.Component {
               <p>
                 La rentrée sportive de notre section Boxe Française débute le
                 &nbsp;<strong>lundi 2 septembre 2019</strong>. <br/>
-                Consultez la <Link to="/faq-2018-2019">FAQ</Link> pour plus d&apos;informations.
+                Consultez la <Link to="/faq-2019-2020">FAQ</Link> pour plus d&apos;informations.
               </p>
               <p>
                 PSBF est un club parisien composé d&apos;enseignants expérimentés et passionnés.

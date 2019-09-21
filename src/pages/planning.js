@@ -8,7 +8,8 @@ import get from 'lodash/get';
 import Nav from '../components/Nav';
 import Gallery from "../components/Gallery";
 
-import picBandeau from '../assets/images/bercy-01.jpg';
+import picBandeau from '../assets/images/planning/bandeau.png';
+
 import picHoraires from '../assets/images/planning/horaires.png';
 import picProf01 from '../assets/images/profs/dom-01.jpg';
 import picProf02 from '../assets/images/profs/dom-02.jpg';
@@ -107,13 +108,13 @@ class Planning extends React.Component {
                   </tr>
                   <tr>
                     <td>Mardi</td>
-                    <td>20:30 - 22:00</td>
+                    <td>20:30 - 22:30</td>
                     <td>Jules Noël</td>
                     <td>Savate tout niveau</td>
                   </tr>
                   <tr>
                     <td>Mercredi</td>
-                    <td>19:00 - 20:00</td>
+                    <td>18:30 - 20:00</td>
                     <td>Bercy</td>
                     <td>Savate compétiteurs</td>
                   </tr>
@@ -145,7 +146,7 @@ class Planning extends React.Component {
                     <td>Samedi</td>
                     <td>10:00 - 12:00</td>
                     <td>Bercy</td>
-                    <td>Savate tout niveau</td>
+                    <td>Savate tout niveau et compétiteurs</td>
                   </tr>
                   </tbody>
                   <tfoot>
