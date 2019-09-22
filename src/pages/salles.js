@@ -7,7 +7,7 @@ import get from 'lodash/get'
 import Nav from '../components/Nav'
 import SallesSwipe from '../components/SallesSwipe'
 
-import picBandeau from '../assets/images/bercy-01.jpg';
+import picBandeau from '../assets/images/salles/bandeau.png';
 
 import picSalles from '../assets/images/salles/salles.png'
 
