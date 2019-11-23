@@ -7,6 +7,8 @@ import get from 'lodash/get';
 import Nav from '../components/Nav';
 
 import picBandeau from '../assets/images/inscription/bandeau.jpg';
+import picAncv1 from '../assets/images/inscription/ancv1.png';
+import picAncv2 from '../assets/images/inscription/ancv2.png';
 import picSponsor01 from '../assets/images/sponsors/bet-capet.png';
 
 class Inscription extends React.Component {
@@ -63,9 +65,14 @@ class Inscription extends React.Component {
             <footer className="major">
               <ul className="actions">
                 <li><a href="https://www.e-cotiz.com/app/site/10996"
-                       target="_blank" rel="noopener noreferrer" className="button special">&gt;&gt; Inscription en ligne &lt;&lt;</a></li>
+                       target="_blank" rel="noopener noreferrer" className="button special">&gt;&gt; Inscription en
+                  ligne &lt;&lt;</a></li>
               </ul>
-            </footer>
+              <span>
+                <img className="image ancv" src={picAncv1} alt="ANCV 1"/>
+                <img className="image ancv" src={picAncv2} alt="ANCV 2"/>
+              </span>
+              </footer>
           </section>
 
           <section id="sponsors" className="main special">
