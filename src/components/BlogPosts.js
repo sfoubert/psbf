@@ -27,7 +27,7 @@ const BlogPosts = (props) => {
 };
 
 BlogPosts.propTypes = {
-  posts: PropTypes.object,
+  posts: PropTypes.array,
 };
 
 export default BlogPosts
