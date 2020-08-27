@@ -120,8 +120,14 @@ class Index extends React.Component {
               <h1>Le club</h1>
               <p>
                 La rentrée sportive de notre section Boxe Française débute le
-                &nbsp;<strong>lundi 2 septembre 2019</strong>. <br/>
-                Consultez la <Link to="/faq-2019-2020">FAQ</Link> pour plus d&apos;informations.
+                &nbsp;<strong>Mardi 1 septembre 2020</strong>.
+                <br/>
+                La saison 2020-2021 commence le 1er septembre 2020. <br/>(Excepté le gymnase Bercy qui n&apos;ouvrira qu&apos;à partir du 14 septembre 2020)
+                <br/>
+                Consultez la <Link to="/faq-2020-2021">FAQ</Link> pour plus d&apos;informations.
+              </p>
+              <p>
+                L&apos;adhésion est de 285 euros pour un adulte pour l&apos;année sportive.
               </p>
               <p>
                 PSBF est un club parisien composé d&apos;enseignants expérimentés et passionnés.

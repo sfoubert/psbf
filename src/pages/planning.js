@@ -84,7 +84,6 @@ class Planning extends React.Component {
                 cours des différents moniteurs et monitrices. Pensez à arriver 15min avant le début
                 de la séance pour vous changer.
               </p>
-
               <p>
                 <span><img className="image main" src={picHoraires} alt="horaires"/></span>
               </p>
