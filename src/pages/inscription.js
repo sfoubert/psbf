@@ -64,7 +64,7 @@ class Inscription extends React.Component {
             </header>
             <footer className="major">
               <ul className="actions">
-                <li><a href="https://www.e-cotiz.com/app/site/10996"
+                <li><a href="https://app.joinly.com/app/member/web-site/5f4421952a1d2166c40b1979"
                        target="_blank" rel="noopener noreferrer" className="button special">&gt;&gt; Inscription en
                   ligne &lt;&lt;</a></li>
               </ul>
