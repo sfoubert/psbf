@@ -30,6 +30,7 @@ import thumbClub06 from '../assets/images/club/thumb/assaut-06.jpg';
 import thumbClub07 from '../assets/images/club/thumb/assaut-07.jpg';
 import thumbClub08 from '../assets/images/club/thumb/assaut-08.jpg';
 import PopupInfo from "../components/PopupInfo";
+import picAncv1 from "../assets/images/inscription/ancv1.png";
 
 const DEFAULT_IMAGES = [
   {
