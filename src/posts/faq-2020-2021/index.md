@@ -16,7 +16,7 @@ Voici une liste de questions-réponses que vous pourriez vous poser avant de fra
 > A partir de 16 ans et faire plus de 45 kg.
 
 ## De quel matériel dois-je disposer ?
-> Une tenue de sport, des chaussures propres, plates, Protège-dents, coquilles (facultatif : protège tibias et protége poitrine pour les filles). Des gants peuvent être prétés. Une bouteille d’eau peut servir 😉
+> Une tenue de sport, des chaussures propres, plates, Protège-dents, coquilles (facultatif : protège tibias et protége poitrine pour les filles). Des gants peuvent être prétés (hors période Covid et respect des conditions sanitaires). Une bouteille d’eau peut servir 😉
 
 ## Comment se déroule une séance ?
 > Échauffement, corps de séance/technique, assauts dirigés et libres, renforcement et retour au calme.
