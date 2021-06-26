@@ -3,6 +3,8 @@ title: Cours été 2021
 date: "2021-06-26T18:33:05.000Z"
 ---
 
+![Cours été 2019](./cours-ete-2021.png "Cours été 2021")\
+[Inscription Eté](https://www.helloasso.com/associations/psbf-paris-savate-boxe-francaise/adhesions/inscription-ete) | [Inscription Offre découverte 15J](https://www.helloasso.com/associations/psbf-paris-savate-boxe-francaise/adhesions/inscription-ete-1)
 
 Le Club Paris Savate Boxe Française donne des cours cet été en intérieur.
 
@@ -10,7 +12,7 @@ Vous retrouverez le planning des salles en bas de post
 
 - Si vous êtes déjà adhérent-e, venez comme vous êtes.
 
-- Si vous ne l'êtes pas, vous pouvez assister à un court d'essai gratuit. 
+- Si vous ne l'êtes pas, vous pouvez assister à un cours d'essai gratuit. 
 Pour cela vous devez :
     - envoyer un SMS au 07 77 86 30 43 avec vos noms, prénoms (un sms par personne) et vos questions
      
@@ -21,7 +23,7 @@ Pour cela vous devez :
 
             [Inscription Offre découverte 15J](https://www.helloasso.com/associations/psbf-paris-savate-boxe-francaise/adhesions/inscription-ete-1)
 
-        - Vous voulez boxer tout l'été : si vous avez déjà une licence dans un autre club, le tarif est de 30 euros pour l'accès a tous les cours tout l'été. Vous n'avez pas de licence, le tarif est de 64 Euros.
+        - Vous voulez boxer tout l'été : si vous avez déjà une licence dans un autre club, le tarif est de 30 euros pour l'accès à tous les cours tout l'été. Vous n'avez pas de licence, le tarif est de 64 Euros.
 
             [Inscription Eté](https://www.helloasso.com/associations/psbf-paris-savate-boxe-francaise/adhesions/inscription-ete)
 
