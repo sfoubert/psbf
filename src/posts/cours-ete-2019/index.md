@@ -33,6 +33,6 @@ Centre sportif Alain-Mimoun\
 15 Rue de la Nouvelle-Calédonie\
 75012 Paris
 
-Rendez-vous sur la page [Inscription](https://app.joinly.com/app/member/web-site/5f4421952a1d2166c40b1979) et sélectionner "Inscription été 2019"
+Rendez-vous sur la page [Inscription](https://www.helloasso.com/associations/psbf-paris-savate-boxe-francaise/adhesions/inscription-ete) et sélectionner "Inscription été 2019"
 
 ![Cours été 2019](./cours-ete-2019.png "Cours été 2019")
