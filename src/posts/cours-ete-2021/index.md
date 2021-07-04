@@ -33,34 +33,36 @@ JUILLET :
 - Jeudi 1/07 : RIPOCHE
 - Vendredi 2/07 : BERCY BASTILLE
 - Lundi 5/07 : BERCY BASTILLE
-- Mercredi 7/07 : LEO LAGRANGE
+- Mercredi 7/07 : LEON MOTTOT
 - Jeudi 8/07 : RIPOCHE
-- Vendredi 9/07 : LEO LAGRANGE
-- Lundi 12/07 : LEO LAGRANGE
+- Vendredi 9/07 : LEON MOTTOT
+- Lundi 12/07 : LEON MOTTOT
 - Jeudi 15/07 : RIPOCHE
-- Vendredi 16/07 : LEO LAGRANGE
-- Lundi 19/07 : LEO LAGRANGE
-- Mercredi 21/07 : LEO LAGRANGE
-- Vendredi 23/07 : LEO LAGRANGE
-- Lundi 26/07 : LEO LAGRANGE
-- Mercredi 28/07 : LEO LAGRANGE
-- Vendredi 30/07 : LEO LAGRANGE
+- Vendredi 16/07 : LEON MOTTOT
+- Lundi 19/07 : LEON MOTTOT
+- Mercredi 21/07 : LEON MOTTOT
+- Vendredi 23/07 : LEON MOTTOT
+- Lundi 26/07 : LEON MOTTOT
+- Mercredi 28/07 : LEON MOTTOT
+- Vendredi 30/07 : LEON MOTTOT
 
 AOUT :
-- Lundi 2/08 : LEO LAGRANGE 
-- Mercredi 4/08 : LEO LAGRANGE
-- Lundi 9/08 : LEO LAGRANGE
-- Mercredi 11/08 : LEO LAGRANGE
-- Lundi 16/08 : LEO LAGRANGE
-- Mercredi 18/08 : LEO LAGRANGE
-- Lundi 23/08 : LEO LAGRANGE
-- Mercredi 25/08 : LEO LAGRANGE
-- Lundi 30/08 : LEO LAGRANGE
+- Lundi 2/08 : LEON MOTTOT 
+- Mercredi 4/08 : LEON MOTTOT
+- Lundi 9/08 : LEON MOTTOT
+- Mercredi 11/08 : LEON MOTTOT
+- Vendredi 13/08 : LEON MOTTOT
+- Lundi 16/08 : LEON MOTTOT
+- Mercredi 18/08 : LEON MOTTOT
+- Vendredi 20/08 : LEON MOTTOT
+- Lundi 23/08 : LEON MOTTOT
+- Mercredi 25/08 : LEON MOTTOT
+- Lundi 30/08 : LEON MOTTOT
 
-**Salle Leo Lagrange**\
-Centre sportif Léo Lagrange\
-68 Boulevard Poniatowski\
-75012 PARIS
+**Salle de boxe Léon Mottot**\
+17 cité Moynet\
+75012 PARIS\
+Métro. Montgallet, ligne 8
 
 **Salle Ripoche**\
 58 rue Maurice Ripoche\
